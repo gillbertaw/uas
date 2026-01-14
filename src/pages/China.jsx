@@ -3,10 +3,21 @@ import { Link } from "react-router-dom";
 import '../styles/china.css';
 import route_map from "../data/chinaRouteMap"
 import gallery from "../data/chinaGallery"
-
+import categories from "../data/chinaCategories";
 
 class China extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      category : "All"
+    }
+  }
+  handleCategory = (e) => {
+    this.setState({category : e.target.value})
+  }
   render() {
+    const filteredGallery = this.state.category === "All" ? gallery : gallery.filter(item => item.category === this.state.category);
+    
     return (
       <div id="body-china">
         <main className="main-china">
@@ -104,25 +115,22 @@ class China extends React.Component {
 
             <section id="china-gallery">
                 <div className="container">
-                    <h3 >Gallery</h3>
-                    <input type="radio" name="gallery" id="gallery-all" className="m-3" defaultChecked></input>
-                    <label for="gallery-all" className="text-muted">All</label>
-                    <input type="radio" name="gallery" id="gallery-history" className="m-3"></input>
-                    <label for="gallery-history" className="text-muted">History</label>
-                    <input type="radio" name="gallery" id="gallery-nature" className="m-3"></input>
-                    <label for="gallery-nature" className="text-muted">Nature</label>
-                    <input type="radio" name="gallery" id="gallery-food" className="m-3"></input>
-                    <label for="gallery-food" className="text-muted">Food</label>
-                    <input type="radio" name="gallery" id="gallery-culture" className="m-3"></input>
-                    <label for="gallery-culture" className="text-muted">Culture</label>
+                    <h3 className="text-center">Gallery</h3>
+                    <div className="d-flex justify-content-center flex-wrap">
+                      {categories.map(item => (
+                        <button key={item} value={item} onClick={this.handleCategory} className={`m-3 rounded-15 p-2 ${this.state.category === item ? "bg-dark text-white" : "bg-light"}`}>
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                     <div id="gallery-china">
                         <div className="row g-3">
-                            {gallery.map((item,index) => (
-                                <div className="col-sm-12 col-md-6 col-lg-3 d-flex" key={index}>
-                                    <div className="card flex-fill">
-                                        <img src={item.src} alt={item.title} className="img-fluid" />
-                                        <p className="text-center">{item.title}</p>
-                                    </div>
+                            {filteredGallery.map(item => (
+                                <div className="col-sm-12 col-md-6 col-lg-3 d-flex" key={item.title}>
+                                  <div className="card flex-fill">
+                                      <img src={item.src} alt={item.title} className="img-fluid" />
+                                      <p className="text-center">{item.title}</p>
+                                  </div>
                                 </div> 
                             ))}
                         </div>
