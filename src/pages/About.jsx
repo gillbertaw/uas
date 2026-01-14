@@ -1,15 +1,16 @@
 import React from "react";
 import "../styles/about.css";
-import  CompanyStory  from '../assets/images/company-story.jpeg'
-import LogoTravel from "../assets/images/LogoTravel.png"
-import missionChina from "../assets/images/mission-china.jpeg"
-import missionJapan from "../assets/images/mission-japan.jpeg"
-import missionKorea from "../assets/images/mission-korea.jpeg"
-import william from '../assets/images/William Wiryawan.jpg'
-import wilhan from '../assets/images/Wilhan.jpg'
-import dei from '../assets/images/Deidrich Zhu.jpg'
-import dicky from '../assets/images/Dicky Saskia.jpg'
-import gaw from '../assets/images/Gillbert Allison Wijaya.jpg'
+import  CompanyStory  from '../assets/images/About/company-story.jpeg';
+import LogoTravel from "../assets/images/General/LogoTravel.png";
+import missionChina from "../assets/images/About/mission-china.jpeg";
+import missionJapan from "../assets/images/About/mission-japan.jpeg";
+import missionKorea from "../assets/images/About/mission-korea.jpeg";
+import william from "../assets/images/founder/William Wiryawan.jpg";
+import wilhan from "../assets/images/founder/Wilhan.jpg";
+import dei from "../assets/images/founder/Deidrich Zhu.jpg";
+import dicky from "../assets/images/founder/Dicky Saskia.jpg";
+import gaw from "../assets/images/founder/Gillbert Allison Wijaya.jpg";
+
 
 const story_paragraph = ["Our journey began with a simple idea — to make traveling easier and more meaningful for everyone. We realized that many people often struggle to decide where to go or how to plan their vacations, sometimes wasting valuable time searching for the right destinations. From that challenge, our project was born.","We built this website as a smart and reliable tour guide platform designed to help travelers easily locate the best places to visit in every country. With our detailed road maps and curated destination guides, we aim to turn every trip into a smooth and memorable experience. Over time, our platform has grown steadily, reaching more users and expanding to cover more destinations worldwide — and we’re just getting started." ];
 
@@ -161,11 +162,7 @@ class About extends React.Component {
                     className={'carousel-item' + (index === 0 ? ' active' : '')}
                     onClick={() => this.setState({selectedFounder: image})}
                     style = {{cursor: 'pointer'}}>
-                      <img src={image.src} alt={image.alt} className="d-block w-100" id="Founder-img"/>
-                      <div className="carousel-caption d-none d-md-block" id="carouselcaption">
-                        <h5 className="fw-bold">{image.name}</h5>
-                        <p>{image.status}</p>
-                      </div>
+                      <img src={image.src} alt={image.alt} className="d-block" id="Founder-img"/>
                     </div>
                   ))}
                 </div>

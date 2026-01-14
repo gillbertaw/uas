@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/faq.css";
-import faqBackground from '../assets/images/faq-title-image.jpeg'
+import faqBackground from '../assets/images/faq/faq-title-image.jpeg'
 
 const faqData = [
   {question : 'How do I log in or sign up?',

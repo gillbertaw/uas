@@ -3,10 +3,21 @@ import { Link } from "react-router-dom";
 import '../styles/china.css';
 import route_map from "../data/chinaRouteMap"
 import gallery from "../data/chinaGallery"
-
+import categories from "../data/chinaCategories";
 
 class China extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      category : "All"
+    }
+  }
+  handleCategory = (e) => {
+    this.setState({category : e.target.value})
+  }
   render() {
+    const filteredGallery = this.state.category === "All" ? gallery : gallery.filter(item => item.category === this.state.category);
+    
     return (
       <div id="body-china">
         <main className="main-china">
@@ -62,11 +73,11 @@ class China extends React.Component {
                           </div>
                       </div>
                       <div className="d-flex gap-3">
-                          <div className="feature-icon">🚗</div>
-                          <div>
-                              <strong>Driving</strong>
-                              <div className="text-muted">Mostly 1–6 hour daily drives, relaxed stops</div>
-                          </div>
+                        <div className="feature-icon">🚗</div>
+                        <div>
+                            <strong>Driving</strong>
+                            <div className="text-muted">Mostly 1–6 hour daily drives, relaxed stops</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -81,21 +92,21 @@ class China extends React.Component {
                     <div className="row g-4">
                         {route_map.map((item,index) => (
                             <div className="col-md-6 col-lg-4 d-flex" key={index}>
-                                <div className="card h-100 flex-fill">
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">{`Day${index+1}`}</h5>
-                                        <h6 className="card-subtitle text-center">{item.trip}</h6>
-                                        <hr />
-                                        <div className="card-text">
-                                            <div className="d-flex justify-content-between">
-                                                <small>🚗 : {item.car}</small>
-                                                <small>📍 : {item.loc}</small>
-                                                <small>☀️ : {item.cat}</small>
-                                            </div>
-                                            <p className="text-muted mt-3 mb-0">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                </div>
+                              <div className="card h-100 flex-fill">
+                                  <div className="card-body">
+                                      <h5 className="card-title text-center">{`Day${index+1}`}</h5>
+                                      <h6 className="card-subtitle text-center">{item.trip}</h6>
+                                      <hr />
+                                      <div className="card-text">
+                                          <div className="d-flex justify-content-between">
+                                              <small>🚗 : {item.car}</small>
+                                              <small>📍 : {item.loc}</small>
+                                              <small>☀️ : {item.cat}</small>
+                                          </div>
+                                          <p className="text-muted mt-3 mb-0">{item.desc}</p>
+                                      </div>
+                                  </div>
+                              </div>
                         </div>
                         ))}
                     </div>
@@ -104,32 +115,28 @@ class China extends React.Component {
 
             <section id="china-gallery">
                 <div className="container">
-                    <h3 >Gallery</h3>
-                    <input type="radio" name="gallery" id="gallery-all" className="m-3" defaultChecked></input>
-                    <label for="gallery-all" className="text-muted">All</label>
-                    <input type="radio" name="gallery" id="gallery-history" className="m-3"></input>
-                    <label for="gallery-history" className="text-muted">History</label>
-                    <input type="radio" name="gallery" id="gallery-nature" className="m-3"></input>
-                    <label for="gallery-nature" className="text-muted">Nature</label>
-                    <input type="radio" name="gallery" id="gallery-food" className="m-3"></input>
-                    <label for="gallery-food" className="text-muted">Food</label>
-                    <input type="radio" name="gallery" id="gallery-culture" className="m-3"></input>
-                    <label for="gallery-culture" className="text-muted">Culture</label>
+                    <h3 className="text-center">Gallery</h3>
+                    <div className="d-flex justify-content-center flex-wrap">
+                      {categories.map(item => (
+                        <button key={item} value={item} onClick={this.handleCategory} className={`m-3 rounded-15 p-2 ${this.state.category === item ? "bg-dark text-white" : "bg-light"}`}>
+                          {item}
+                        </button>
+                      ))}
+                    </div>
                     <div id="gallery-china">
                         <div className="row g-3">
-                            {gallery.map((item,index) => (
-                                <div className="col-sm-12 col-md-6 col-lg-3 d-flex" key={index}>
-                                    <div className="card flex-fill">
-                                        <img src={item.src} alt={item.title} className="img-fluid" />
-                                        <p className="text-center">{item.title}</p>
-                                    </div>
+                            {filteredGallery.map(item => (
+                                <div className="col-sm-12 col-md-6 col-lg-3 d-flex" key={item.title}>
+                                  <div className="card flex-fill">
+                                      <img src={item.src} alt={item.title} className="img-fluid" />
+                                      <p className="text-center">{item.title}</p>
+                                  </div>
                                 </div> 
                             ))}
                         </div>
                     </div>
                 </div>
             </section>
-
         </main>
       </div>
     );

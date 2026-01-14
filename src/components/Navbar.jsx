@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/images/LogoTravel.png';
-import User from '../assets/images/user.png';
+import logo from '../assets/images/General/LogoTravel.png';
+import User from '../assets/images/General/user.png';
 import '../styles/navbar.css'
 
 class Navbar extends React.Component {
