@@ -1,0 +1,109 @@
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.kyml {
+  flex: 1;
+  position: relative;
+}
+#back {
+  width: 100%;
+  max-width: 140px; /* reasonable max on larger screens */
+  height: auto;
+  border-radius: 12px;
+}
+
+/* make fav fluid inside its column; allow wrapping and center content */
+#fav {
+  width: 100%;
+  max-width: 200px; /* will be constrained by parent column */
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.1;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background-color: #ff6b81; /* easier to read than beige */
+  color: #fff;
+  border: none;
+}
+
+/* mobile adjustments: make buttons full-width, spacing between stacked elements */
+@media (max-width: 767.98px) {
+  #back,
+  #fav {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* add a bit of breathing room when stacked */
+  #kymalay .row.align-items-center > .col-12 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+#kymalay {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+#judulmalay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+h2 {
+  font-weight: bold;
+}
+#ml1{
+    color: white;
+    font-size: 26px;
+    text-align: justify;
+}
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+}
+
+#kli1 {
+  width: 100%;
+  height: 200px;
+  max-height: 260px;
+}
+#kli2 {
+  width: 120px;
+  height: 200px;
+  max-height: 260px;
+}

@@ -1,32 +1,66 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 
+import Home from "./pages/Home";
 import About from "./pages/About";
 import China from "./pages/China";
 import Korea from "./pages/Korea";
 import FAQ from "./pages/FAQ";
 
+import Favorite from "./pages/favorite/Favorite";
+
+import Malaysia from "./pages/malaysia/Malaysia";
+import KualaLumpur from "./pages/malaysia/KualaLumpur";
+
+import Singapore from "./pages/singapore/Singapore";
+import SingaporeCity from "./pages/singapore/SingaporeCity";
+
+import Thailand from "./pages/thailand/Thailand";
+import Bangkok from "./pages/thailand/Bangkok";
+
+import Vietnam from "./pages/vietnam/Vietnam";
+import Hanoi from "./pages/vietnam/Hanoi";
+
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div className="app">
         <Navbar />
-        {/* <ScrollToTop /> */}
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/china" element={<China />} />
-          <Route path="/korea" element={<Korea />} />
-          <Route path="/faq" element={<FAQ />} />
-        </Routes>
+        <ScrollToTop />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/china" element={<China />} />
+            <Route path="/korea" element={<Korea />} />
+            <Route path="/faq" element={<FAQ />} />
+
+            <Route path="/favorite" element={<Favorite />} />
+
+            <Route path="/malaysia" element={<Malaysia />} />
+            <Route path="/malaysia/kuala-lumpur" element={<KualaLumpur />} />
+
+            <Route path="/singapore" element={<Singapore />} />
+            <Route path="/singapore/city" element={<SingaporeCity />} />
+
+            <Route path="/thailand" element={<Thailand />} />
+            <Route path="/thailand/bangkok" element={<Bangkok />} />
+
+            <Route path="/vietnam" element={<Vietnam />} />
+            <Route path="/vietnam/hanoi" element={<Hanoi />} />
+
+            {/* fallback to home */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
         <Footer />
-      </>
+      </div>
     );
   }
 }
 
 export default App;
-
