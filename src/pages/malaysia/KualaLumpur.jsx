@@ -31,7 +31,9 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img src="/gambar/kl1.jpeg" id="kli1" className="img-fluid" />
-              <p id="ml1">Ikon Malaysia yaitu twintower yang megah dan tinggi.</p>
+              <p id="ml1">
+                Ikon Malaysia yaitu twintower yang megah dan tinggi.
+              </p>
             </div>
 
             <div className="col-md-4">
