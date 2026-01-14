@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+
+#body-about {
+    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+}
+
+#main-companystory {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#companystory-background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-mode: luminance;
+    mask-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 0.8) 40%,
+    rgba(255, 255, 255, 0.4) 70%,
+    rgba(255, 255, 255, 0) 100%);
+}
+
+#companystory-content {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+}
+
+.button-story-mission {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    background: none;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.story-content, .mission-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(55px);
+  transition: max-height 1.5s ease, opacity 1s ease, transform 1s ease;
+}
+
+.story-content.show, .mission-content.show {
+  max-height: 500px; 
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#companystory-logo {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#companystory-logo:hover {
+    transform: scale(1.05);
+}
+
+#main-mission {
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+#mission-img, #mission-img1 {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#mission-img:hover,
+#mission-img1:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#mission-right .row {
+  margin-top: 15px;
+}
+
+#main-founders {
+    background-color: rgba(245, 245, 220, 0.6);
+    margin-top: 10px;
+    padding: 50px 0;   
+}
+
+#founders-title {
+    margin-bottom: 30px;
+}
+
+#founders-content {
+    max-width: 500px;
+}
+
+#Founder-img{
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#carouselcaption {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    padding: 15px;
+    bottom: 50px;
+}
+
+#carouselcaption h5,
+#carouselcaption p {
+    color: black;
+    margin: 0;
+}
+
+#carouselindicators [data-bs-target] {
+    width: 40px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#carousel-control-button {
+    background-color: black;
+    border-radius: 50%;
+    padding: 25px;
+    background-size: 70%;
+    background-position: center;
+    opacity: 0.9;
+}
+
+#carousel-control-button:hover {
+    background-color: rgb(17, 86, 135);
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+

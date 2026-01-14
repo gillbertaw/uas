@@ -1,0 +1,27 @@
+@font-face {
+    font-family : "Playfair Display";
+    src : ("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+}
+.deidrich-footer {
+    font-family: "Playfair Display", "Georgia", "Times New Roman", "serif";
+    background: #1a2f42;
+    color: white;
+    height: auto;
+    padding: 30px 0;
+}
+
+.deidrich-footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.deidrich-footer a:hover {
+    text-decoration: underline;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
