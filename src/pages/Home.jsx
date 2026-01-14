@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/home.css';
 import awan from '../assets/images/home/awan.jpg';
+import heroVideo from '../assets/images/home/video1.mp4';
 import mapImg from '../assets/images/home/map.png';
 import flagAus from '../assets/images/flag/australia-flag.png';
 import flagCanada from '../assets/images/flag/canada-flag.png';
@@ -16,12 +17,18 @@ class Home extends React.Component {
     return (
       <div className="deidrich-badan">
         <div className="background-awan">
-          <img src={awan} alt="" />
+          <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline poster={awan} />
+          <div className="awan-overlay" />
           <div className="welcome">
             <h1 className="welcome-text">
               The world is a book, and those who do not travel read only one page.
             </h1>
             <p>“No one can choose your path but you.”</p>
+
+            <div className="hero-cta">
+              <Link className="region-btn btn btn-primary" to="/australia">Get Started</Link>
+              <a className="btn play-btn" href={heroVideo} target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            </div>
           </div>
         </div>
 
