@@ -73,11 +73,11 @@ class China extends React.Component {
                           </div>
                       </div>
                       <div className="d-flex gap-3">
-                          <div className="feature-icon">🚗</div>
-                          <div>
-                              <strong>Driving</strong>
-                              <div className="text-muted">Mostly 1–6 hour daily drives, relaxed stops</div>
-                          </div>
+                        <div className="feature-icon">🚗</div>
+                        <div>
+                            <strong>Driving</strong>
+                            <div className="text-muted">Mostly 1–6 hour daily drives, relaxed stops</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -92,21 +92,21 @@ class China extends React.Component {
                     <div className="row g-4">
                         {route_map.map((item,index) => (
                             <div className="col-md-6 col-lg-4 d-flex" key={index}>
-                                <div className="card h-100 flex-fill">
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">{`Day${index+1}`}</h5>
-                                        <h6 className="card-subtitle text-center">{item.trip}</h6>
-                                        <hr />
-                                        <div className="card-text">
-                                            <div className="d-flex justify-content-between">
-                                                <small>🚗 : {item.car}</small>
-                                                <small>📍 : {item.loc}</small>
-                                                <small>☀️ : {item.cat}</small>
-                                            </div>
-                                            <p className="text-muted mt-3 mb-0">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                </div>
+                              <div className="card h-100 flex-fill">
+                                  <div className="card-body">
+                                      <h5 className="card-title text-center">{`Day${index+1}`}</h5>
+                                      <h6 className="card-subtitle text-center">{item.trip}</h6>
+                                      <hr />
+                                      <div className="card-text">
+                                          <div className="d-flex justify-content-between">
+                                              <small>🚗 : {item.car}</small>
+                                              <small>📍 : {item.loc}</small>
+                                              <small>☀️ : {item.cat}</small>
+                                          </div>
+                                          <p className="text-muted mt-3 mb-0">{item.desc}</p>
+                                      </div>
+                                  </div>
+                              </div>
                         </div>
                         ))}
                     </div>
@@ -137,7 +137,6 @@ class China extends React.Component {
                     </div>
                 </div>
             </section>
-
         </main>
       </div>
     );
