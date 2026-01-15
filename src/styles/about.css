@@ -111,21 +111,9 @@
 
 #Founder-img{
     height: 600px;
+    width: 100%;
     object-fit: cover;
     border-radius: 20px;
-}
-
-#carouselcaption {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 12px;
-    padding: 15px;
-    bottom: 50px;
-}
-
-#carouselcaption h5,
-#carouselcaption p {
-    color: black;
-    margin: 0;
 }
 
 #carouselindicators [data-bs-target] {

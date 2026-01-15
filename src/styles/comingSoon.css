@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+
+.comingSoon {
+    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+    margin-top: 80px;
+}

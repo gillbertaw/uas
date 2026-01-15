@@ -7,31 +7,6 @@
     font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
 }
 
-#nav-korea {
-    background-color: rgba(255, 255, 255, 0.1) !important; 
-    backdrop-filter: blur(10px); 
-    transition: background-color 0.3s ease;
-    position: fixed;
-}
-
-#navbar-center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-#search-form {
-    max-width: 400px;
-    width: 100%;
-}
-
-#input-search {
-  border-radius: 20px; 
-  padding: 8px 12px; 
-  border: 1px solid #ccc;
-  outline: none; 
-}
-
 .btn{
     padding: 15px 40px;
     border: none;
@@ -96,26 +71,6 @@
 
 .btn:active{
     font-weight: bold;
-}
-
-#button-submit {
-    border-radius: 80px; 
-    padding: 8px 12px; 
-    border: 1px solid #ccc;
-    outline: none; 
-}
-
-#user-btn {
-    border: none;
-    background: none;
-    padding: 4px;
-    justify-content: center;
-    align-items: center;
-}
-
-#user-dropdown {
-    width: 30px;
-    height: auto;
 }
 
 #korea-top {
@@ -203,3 +158,6 @@
 
 }
 
+.rounded-15 {
+    border-radius: 15px ;
+}
