@@ -14,15 +14,14 @@
 }
 #back {
   width: 100%;
-  max-width: 140px; /* reasonable max on larger screens */
+  max-width: 140px;
   height: auto;
   border-radius: 12px;
 }
 
-/* make fav fluid inside its column; allow wrapping and center content */
 #fav {
   width: 100%;
-  max-width: 200px; /* will be constrained by parent column */
+  max-width: 200px;
   height: auto;
   display: inline-flex;
   align-items: center;
@@ -32,12 +31,11 @@
   line-height: 1.1;
   border-radius: 12px;
   padding: 10px 12px;
-  background-color: #ff6b81; /* easier to read than beige */
+  background-color: #ff6b81;
   color: #fff;
   border: none;
 }
 
-/* mobile adjustments: make buttons full-width, spacing between stacked elements */
 @media (max-width: 767.98px) {
   #back,
   #fav {
@@ -45,7 +43,6 @@
     width: 100%;
   }
 
-  /* add a bit of breathing room when stacked */
   #kymalay .row.align-items-center > .col-12 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
