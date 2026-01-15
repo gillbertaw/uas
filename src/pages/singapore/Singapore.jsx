@@ -9,7 +9,7 @@ function Singapore() {
     const singapore = {
       id: "singapore",
       title: "Singapore",
-      image: "/gambar/singapore.png",
+      image: "/images/country/singapore/singapura.jpeg",
       link: "/singapore",
     };
 
@@ -28,9 +28,9 @@ function Singapore() {
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/singapore/singapura.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Singapore"
         />
 
         <div className="container" id="kymalay">

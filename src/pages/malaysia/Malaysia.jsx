@@ -9,7 +9,7 @@ function Malaysia() {
     const malaysia = {
       id: "malaysia",
       title: "Malaysia",
-      image: "/gambar/malaysia.png",
+      image: "/images/country/malaysia/malaysia.png",
       link: "/malaysia",
     };
 
