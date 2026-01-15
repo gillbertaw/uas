@@ -3,13 +3,7 @@ import { Link } from "react-router-dom";
 import '../../styles/home.css';
 import heroVideo from '../../assets/images/home/video1.mp4';
 import mapImg from '../../assets/images/home/map.png';
-import flagAus from '../../assets/images/flag/australia-flag.png';
-import flagCanada from '../../assets/images/flag/canada-flag.png';
-import flagChina from '../../assets/images/flag/china-flag.png';
-import flagIndonesia from '../../assets/images/flag/indonesia-flag.png';
-import flagJapan from '../../assets/images/flag/japan-flag.png';
-import flagKorea from '../../assets/images/flag/south-korea-flag.png';
-import flagSwitz from '../../assets/images/flag/switzerland-flag.png';
+import homeFlags from '../../data/homeFlag';
 
 class Home extends React.Component {
   render() {
@@ -25,7 +19,7 @@ class Home extends React.Component {
             <p>“No one can choose your path but you.”</p>
 
             <div className="hero-cta">
-              <Link className="region-btn btn btn-primary" to="/australia">Get Started</Link>
+              <Link className="region-btn btn btn-primary" to="/list-ticket">Get Started</Link>
               <a className="btn play-btn" href={heroVideo} target="_blank" rel="noopener noreferrer">▶ Watch</a>
             </div>
           </div>
@@ -38,61 +32,25 @@ class Home extends React.Component {
           <img className="gambar-map" src={mapImg} alt="map" />
         </div>
 
-        <div className="container d-flex justify-content-between flex-wrap">
+        <div className="container-fluid">
           <div className="carousel">
-            <div className="group">
-              <div className="country-flag">
-                <Link to="/australia"><img src={flagAus} alt="Australia" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/canada"><img src={flagCanada} alt="Canada" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/china"><img src={flagChina} alt="China" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/indonesia"><img src={flagIndonesia} alt="Indonesia" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/japan"><img src={flagJapan} alt="Japan" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/korea"><img src={flagKorea} alt="Korea" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/swizz"><img src={flagSwitz} alt="Switzerland" /></Link>
-              </div>
+            <div className="track">
+              {homeFlags.map((flag) => (
+                <div key={flag.id} className="country-flag">
+                  <Link to={flag.route}><img src={flag.image} alt={flag.name} /></Link>
+                </div>
+              ))}
+              {homeFlags.map((flag) => (
+                <div key={`duplicate-${flag.id}`} className="country-flag">
+                  <Link to={flag.route}><img src={flag.image} alt={flag.name} /></Link>
+                </div>
+              ))}
             </div>
-
-            <div className="group">
-              <div className="country-flag">
-                <Link to="/australia"><img src={flagAus} alt="Australia" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/canada"><img src={flagCanada} alt="Canada" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/china"><img src={flagChina} alt="China" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/indonesia"><img src={flagIndonesia} alt="Indonesia" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/japan"><img src={flagJapan} alt="Japan" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/korea"><img src={flagKorea} alt="Korea" /></Link>
-              </div>
-              <div className="country-flag">
-                <Link to="/swizz"><img src={flagSwitz} alt="Switzerland" /></Link>
-              </div>
-            </div>
-            
           </div>
         </div>
 
         <div className="select-region">
-          <Link className="region-btn btn-secondary btn-lg" to="/australia">Get Started</Link>
+          <Link className="region-btn btn-secondary btn-lg" to="/list-ticket">Get Started</Link>
         </div>
       </div>
     );
