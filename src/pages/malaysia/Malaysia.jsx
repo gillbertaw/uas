@@ -85,7 +85,7 @@ function Malaysia() {
             </div>
 
             <div className="col-md-4">
-              <Link to="gambar/malaysia/penang">
+              <Link to="/malaysia/penang">
                 <div className="card h-100 shadow-sm">
                   <img
                     src="/images/country/malaysia/penang.jpeg"
