@@ -8,9 +8,9 @@ import homeFlags from '../../data/homeFlag';
 class Home extends React.Component {
   render() {
     return (
-      <div className="deidrich-badan">
+      <div className="container deidrich-badan">
+      <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline />
         <div className="background-awan">
-          <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline />
           <div className="awan-overlay" />
           <div className="welcome">
             <h1 className="welcome-text">
