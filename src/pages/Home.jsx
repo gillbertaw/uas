@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/home.css';
-import awan from '../assets/images/home/awan.jpg';
 import heroVideo from '../assets/images/home/video1.mp4';
 import mapImg from '../assets/images/home/map.png';
 import flagAus from '../assets/images/flag/australia-flag.png';
@@ -17,7 +16,7 @@ class Home extends React.Component {
     return (
       <div className="deidrich-badan">
         <div className="background-awan">
-          <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline poster={awan} />
+          <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline />
           <div className="awan-overlay" />
           <div className="welcome">
             <h1 className="welcome-text">
@@ -64,6 +63,31 @@ class Home extends React.Component {
                 <Link to="/swizz"><img src={flagSwitz} alt="Switzerland" /></Link>
               </div>
             </div>
+
+            <div className="group">
+              <div className="country-flag">
+                <Link to="/australia"><img src={flagAus} alt="Australia" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/canada"><img src={flagCanada} alt="Canada" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/china"><img src={flagChina} alt="China" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/indonesia"><img src={flagIndonesia} alt="Indonesia" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/japan"><img src={flagJapan} alt="Japan" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/korea"><img src={flagKorea} alt="Korea" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/swizz"><img src={flagSwitz} alt="Switzerland" /></Link>
+              </div>
+            </div>
+            
           </div>
         </div>
 

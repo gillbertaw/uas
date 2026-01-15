@@ -255,8 +255,6 @@ button[type="submit"] {
     border-radius: 12px;
 }
 
-
-
 .select-region a{
     text-decoration: none;
     justify-content: center;
@@ -286,11 +284,13 @@ button[type="submit"] {
     margin: 20px auto;
     width: 90%;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
-.carousel::-webkit-scrolbar {
-    display: none;
+.track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
 }
 
 .group {
@@ -298,7 +298,6 @@ button[type="submit"] {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 10s infinite linear;
     padding-right: 1em;
 }
 
@@ -316,9 +315,9 @@ button[type="submit"] {
     width: 100px;
 }
 
-@keyframes spin {
-    from {transform: 0;}
-    to {translate: -100%;}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 /* footer */
