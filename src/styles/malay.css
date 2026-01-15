@@ -1,3 +1,23 @@
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
 .bg-img {
   position: fixed;
   top: 0;
@@ -65,17 +85,29 @@
 }
 
 .card-img-top {
+  display: block;
+  width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+/* Override global hover rules that change image sizing (defined in other css files like home.css)
+   Prevent the image itself from changing height/width on hover so the whole card moves together */
+.card-img-top:hover {
+  height: 200px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 h2 {
   font-weight: bold;
 }
-#ml1{
-    color: white;
-    font-size: 26px;
-    text-align: justify;
+#ml1 {
+  color: white;
+  font-size: 26px;
+  text-align: justify;
 }
 .card-title {
   font-weight: 600;
@@ -84,11 +116,20 @@ h2 {
 .card-text {
   font-size: 0.9rem;
 }
+
+.card {
+  /* ensure the card animates smoothly when hovered and prevent inner content from reflowing */
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* prevent children (image) from visually overflowing during transform */
+  will-change: transform;
+}
+
 .card:hover {
   transform: translateY(-5px);
-  transition: transform 0.3s;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* keep the lifted card above nearby elements */
 }
+
 .modal-content {
   background-color: rgba(0, 0, 0, 0.5) !important;
   color: white !important;
