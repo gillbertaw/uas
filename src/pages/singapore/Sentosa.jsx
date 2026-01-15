@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function Sentosa() {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/singapore/sentosa.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Sentosa"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function KualaLumpur() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Kuala Lumpur
+                Sentosa Island
               </h2>
             </div>
           </div>
@@ -35,45 +35,43 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/singapore/si1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="Universal Studios Singapore (USS)"
               />
               <p id="ml1" id="judulmalay">
-                Kuala Lumpur Tower.
+                Universal Studios Singapore (USS).
                 <br />
-                Ikon Malaysia yaitu twintower yang megah dan tinggi. Spot
-                foto-foto yang indah sehingga tidak dapat dilewatkan.
+                Menjelajahi taman bermain yang terkenal di Singapura
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl2.jpeg"
+                src="/images/country/singapore/si2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Shopping Center"
+                alt="SEA Aquarium"
               />
               <p id="ml1" id="judulmalay">
-                Shopping Center.
-                <br />
-                Tempat pusat belanja dan kuliner malam yang enak dan harus
-                dicoba.
+                SEA Aquarium. <br />
+                Menyelami keindahan bawah laut dengan berbagai spesies ikan dan
+                kehidupan laut lainnya.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/singapore/m2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Sentosa Cable Car"
               />
               <p id="ml1" id="judulmalay">
-                Cultural Center. <br/>Pusat budaya, seni dan kerajinan Malaysia —
-                menjual batik, kerajinan kayu, suvenir khas, dan barang-barang
-                artisan.
+                Sentosa Cable Car.
+                <br />
+                Melihat pemandangan laut dari atas.
               </p>
             </div>
           </div>
@@ -83,4 +81,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default Sentosa;

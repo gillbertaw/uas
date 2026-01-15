@@ -30,8 +30,6 @@ function MarinaBay() {
                 Marina Bay Area
               </h2>
             </div>
-
-            <div className="col-12 col-md-2" />
           </div>
 
           <div className="row">
@@ -49,7 +47,7 @@ function MarinaBay() {
                 malam hari.
               </p>
             </div>
-            
+
             <div className="col-md-4">
               <img
                 src="/images/country/singapore/m3.jpeg"

@@ -82,7 +82,7 @@ function Singapore() {
             </div>
 
             <div className="col-md-4">
-              <Link to="/malaysia/penang" className="text-decoration-none">
+              <Link to="/singapore/sentosa" className="text-decoration-none">
                 <div className="card h-100 shadow-sm">
                   <img
                     src="/images/country/singapore/sentosa.jpeg"
@@ -97,7 +97,7 @@ function Singapore() {
             </div>
 
             <div className="col-md-4">
-              <Link to="/malaysia/langkawi" className="text-decoration-none">
+              <Link to="/singapore/chinatown" className="text-decoration-none">
                 <div className="card h-100 shadow-sm">
                   <img
                     src="/images/country/singapore/Ct.jpeg"
