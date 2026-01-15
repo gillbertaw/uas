@@ -1,51 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/home.css";
-import awan from "../../assets/images/home/awan.jpg";
-import heroVideo from "../../assets/images/home/video1.mp4";
-import mapImg from "../../assets/images/home/map.png";
-import flagAus from "../../assets/images/flag/australia-flag.png";
-import flagCanada from "../../assets/images/flag/canada-flag.png";
-import flagChina from "../../assets/images/flag/china-flag.png";
-import flagIndonesia from "../../assets/images/flag/indonesia-flag.png";
-import flagJapan from "../../assets/images/flag/japan-flag.png";
-import flagKorea from "../../assets/images/flag/south-korea-flag.png";
-import flagSwitz from "../../assets/images/flag/switzerland-flag.png";
+import '../styles/home.css';
+import heroVideo from '../assets/images/home/video1.mp4';
+import mapImg from '../assets/images/home/map.png';
+import flagAus from '../assets/images/flag/australia-flag.png';
+import flagCanada from '../assets/images/flag/canada-flag.png';
+import flagChina from '../assets/images/flag/china-flag.png';
+import flagIndonesia from '../assets/images/flag/indonesia-flag.png';
+import flagJapan from '../assets/images/flag/japan-flag.png';
+import flagKorea from '../assets/images/flag/south-korea-flag.png';
+import flagSwitz from '../assets/images/flag/switzerland-flag.png';
 
 class Home extends React.Component {
   render() {
     return (
       <div className="deidrich-badan">
         <div className="background-awan">
-          <video
-            className="awan-video"
-            src={heroVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={awan}
-          />
+          <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline />
           <div className="awan-overlay" />
           <div className="welcome">
             <h1 className="welcome-text">
-              The world is a book, and those who do not travel read only one
-              page.
+              The world is a book, and those who do not travel read only one page.
             </h1>
             <p>“No one can choose your path but you.”</p>
 
             <div className="hero-cta">
-              <Link className="region-btn btn btn-primary" to="/australia">
-                Get Started
-              </Link>
-              <a
-                className="btn play-btn"
-                href={heroVideo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ▶ Watch
-              </a>
+              <Link className="region-btn btn btn-primary" to="/australia">Get Started</Link>
+              <a className="btn play-btn" href={heroVideo} target="_blank" rel="noopener noreferrer">▶ Watch</a>
             </div>
           </div>
         </div>
@@ -61,48 +42,57 @@ class Home extends React.Component {
           <div className="carousel">
             <div className="group">
               <div className="country-flag">
-                <Link to="/australia">
-                  <img src={flagAus} alt="Australia" />
-                </Link>
+                <Link to="/australia"><img src={flagAus} alt="Australia" /></Link>
               </div>
               <div className="country-flag">
-                <Link to="/canada">
-                  <img src={flagCanada} alt="Canada" />
-                </Link>
+                <Link to="/canada"><img src={flagCanada} alt="Canada" /></Link>
               </div>
               <div className="country-flag">
-                <Link to="/china">
-                  <img src={flagChina} alt="China" />
-                </Link>
+                <Link to="/china"><img src={flagChina} alt="China" /></Link>
               </div>
               <div className="country-flag">
-                <Link to="/indonesia">
-                  <img src={flagIndonesia} alt="Indonesia" />
-                </Link>
+                <Link to="/indonesia"><img src={flagIndonesia} alt="Indonesia" /></Link>
               </div>
               <div className="country-flag">
-                <Link to="/japan">
-                  <img src={flagJapan} alt="Japan" />
-                </Link>
+                <Link to="/japan"><img src={flagJapan} alt="Japan" /></Link>
               </div>
               <div className="country-flag">
-                <Link to="/korea">
-                  <img src={flagKorea} alt="Korea" />
-                </Link>
+                <Link to="/korea"><img src={flagKorea} alt="Korea" /></Link>
               </div>
               <div className="country-flag">
-                <Link to="/swizz">
-                  <img src={flagSwitz} alt="Switzerland" />
-                </Link>
+                <Link to="/swizz"><img src={flagSwitz} alt="Switzerland" /></Link>
               </div>
             </div>
+
+            <div className="group">
+              <div className="country-flag">
+                <Link to="/australia"><img src={flagAus} alt="Australia" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/canada"><img src={flagCanada} alt="Canada" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/china"><img src={flagChina} alt="China" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/indonesia"><img src={flagIndonesia} alt="Indonesia" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/japan"><img src={flagJapan} alt="Japan" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/korea"><img src={flagKorea} alt="Korea" /></Link>
+              </div>
+              <div className="country-flag">
+                <Link to="/swizz"><img src={flagSwitz} alt="Switzerland" /></Link>
+              </div>
+            </div>
+            
           </div>
         </div>
 
         <div className="select-region">
-          <Link className="region-btn btn-secondary btn-lg" to="/australia">
-            Get Started
-          </Link>
+          <Link className="region-btn btn-secondary btn-lg" to="/australia">Get Started</Link>
         </div>
       </div>
     );
