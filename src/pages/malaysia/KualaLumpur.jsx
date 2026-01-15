@@ -26,7 +26,9 @@ function KualaLumpur() {
             </div>
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
-              <h2 className="fw-bold mb-0">Kuala Lumpur</h2>
+              <h2 className="fw-bold mb-0" id="judulmalay">
+                Kuala Lumpur
+              </h2>
             </div>
 
             <div className="col-12 col-md-2" />
@@ -40,8 +42,11 @@ function KualaLumpur() {
                 className="img-fluid"
                 alt="Kuala Lumpur Tower"
               />
-              <p id="ml1">
-                Ikon Malaysia yaitu twintower yang megah dan tinggi.
+              <p id="ml1" id="judulmalay">
+                Kuala Lumpur Tower.
+                <br />
+                Ikon Malaysia yaitu twintower yang megah dan tinggi. Spot
+                foto-foto yang indah sehingga tidak dapat dilewatkan.
               </p>
             </div>
 
@@ -52,7 +57,12 @@ function KualaLumpur() {
                 className="img-fluid"
                 alt="Shopping Center"
               />
-              <p id="ml1">Pusat belanja dan kuliner malam.</p>
+              <p id="ml1" id="judulmalay">
+                Shopping Center.
+                <br />
+                Tempat pusat belanja dan kuliner malam yang enak dan harus
+                dicoba.
+              </p>
             </div>
 
             <div className="col-md-4">
@@ -62,9 +72,10 @@ function KualaLumpur() {
                 className="img-fluid"
                 alt="Cultural Center"
               />
-              <p id="ml1">
-                Pusat budaya, seni dan kerajinan Malaysia — menjual batik,
-                kerajinan kayu, suvenir khas, dan barang-barang artisan.
+              <p id="ml1" id="judulmalay">
+                Cultural Center. <br/>Pusat budaya, seni dan kerajinan Malaysia —
+                menjual batik, kerajinan kayu, suvenir khas, dan barang-barang
+                artisan.
               </p>
             </div>
           </div>
