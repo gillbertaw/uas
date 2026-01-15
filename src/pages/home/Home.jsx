@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../styles/home.css';
-import heroVideo from '../assets/images/home/video1.mp4';
-import mapImg from '../assets/images/home/map.png';
-import flagAus from '../assets/images/flag/australia-flag.png';
-import flagCanada from '../assets/images/flag/canada-flag.png';
-import flagChina from '../assets/images/flag/china-flag.png';
-import flagIndonesia from '../assets/images/flag/indonesia-flag.png';
-import flagJapan from '../assets/images/flag/japan-flag.png';
-import flagKorea from '../assets/images/flag/south-korea-flag.png';
-import flagSwitz from '../assets/images/flag/switzerland-flag.png';
+import '../../styles/home.css';
+import heroVideo from '../../assets/images/home/video1.mp4';
+import mapImg from '../../assets/images/home/map.png';
+import flagAus from '../../assets/images/flag/australia-flag.png';
+import flagCanada from '../../assets/images/flag/canada-flag.png';
+import flagChina from '../../assets/images/flag/china-flag.png';
+import flagIndonesia from '../../assets/images/flag/indonesia-flag.png';
+import flagJapan from '../../assets/images/flag/japan-flag.png';
+import flagKorea from '../../assets/images/flag/south-korea-flag.png';
+import flagSwitz from '../../assets/images/flag/switzerland-flag.png';
 
 class Home extends React.Component {
   render() {
