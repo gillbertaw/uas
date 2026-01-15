@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function Langkawi() {
   const navigate = useNavigate();
 
   return (
@@ -27,7 +27,7 @@ function KualaLumpur() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Kuala Lumpur
+                Langkawi
               </h2>
             </div>
 
@@ -96,4 +96,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default Langkawi;

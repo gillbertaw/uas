@@ -25,7 +25,7 @@ import Penang from "./pages/malaysia/Penang";
 import Langkawi from "./pages/malaysia/Langkawi";
 
 import Singapore from "./pages/singapore/Singapore";
-import SingaporeCity from "./pages/singapore/SingaporeCity";
+import MarinaBay from "./pages/singapore/MarinaBay";
 
 import Thailand from "./pages/thailand/Thailand";
 import Bangkok from "./pages/thailand/Bangkok";
@@ -58,7 +58,7 @@ class App extends React.Component {
             <Route path="/malaysia/langkawi" element={<Langkawi />} />
 
             <Route path="/singapore" element={<Singapore />} />
-            <Route path="/singapore/city" element={<SingaporeCity />} />
+            <Route path="/singapore/marina-bay" element={<MarinaBay />} />
 
             <Route path="/thailand" element={<Thailand />} />
             <Route path="/thailand/bangkok" element={<Bangkok />} />
