@@ -1,104 +1,104 @@
 const gallery = [
   {
-    src: "images/china/Forbidden City.jpeg",
+    src: "/images/country/china/Forbidden City.jpeg",
     title: "Forbidden City",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Tiananmen Square.jpeg",
+    src: "/images/country/china/Tiananmen Square.jpeg",
     title: "Tiananmen Square",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Houhai Lake.jpeg",
+    src: "/images/country/china/Houhai Lake.jpeg",
     title: "Houhai Lake",
-    category: "Nature"
+    category: "Nature",
   },
   {
-    src: "images/china/Mutianyu.jpeg",
+    src: "/images/country/china/Mutianyu.jpeg",
     title: "Mutianyu",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Chengde Mountain Resort.jpeg",
+    src: "/images/country/china/Chengde Mountain Resort.jpeg",
     title: "Chengde Mountain Resort",
-    category: "Nature"
+    category: "Nature",
   },
   {
-    src: "images/china/Laolongtou.jpeg",
+    src: "/images/country/china/Laolongtou.jpeg",
     title: "Laolongtou",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Shanghaiguan Pass.jpeg",
+    src: "/images/country/china/Shanghaiguan Pass.jpeg",
     title: "Shanhaiguan Pass",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Qingdao Beer Museum.jpeg",
+    src: "/images/country/china/Qingdao Beer Museum.jpeg",
     title: "Qingdao Beer Museum",
-    category: "Food"
+    category: "Food",
   },
   {
-    src: "images/china/Zhanqiao Pier.jpeg",
+    src: "/images/country/china/Zhanqiao Pier.jpeg",
     title: "Zhanqiao Pier",
-    category: "Culture"
+    category: "Culture",
   },
   {
-    src: "images/china/Sun Yat-sen Mausoleum.jpeg",
+    src: "/images/country/china/Sun Yat-sen Mausoleum.jpeg",
     title: "Sun Yat-sen Mausoleum",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Ming Xiaoling Tomb.jpeg",
+    src: "/images/country/china/Ming Xiaoling Tomb.jpeg",
     title: "Ming Xiaoling Tomb",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Nanjing City Wall.jpeg",
+    src: "/images/country/china/Nanjing City Wall.jpeg",
     title: "Nanjing City Wall",
-    category: "History"
+    category: "History",
   },
   {
-    src: "images/china/Confucius Temple (Fuzimiao) area.jpeg",
+    src: "/images/country/china/Confucius Temple (Fuzimiao) area.jpeg",
     title: "Confucius Temple (Fuzimiao) area",
-    category: "Culture"
+    category: "Culture",
   },
   {
-    src: "images/china/Yangtze River.jpeg",
+    src: "/images/country/china/Yangtze River.jpeg",
     title: "Yangtze River",
-    category: "Nature"
+    category: "Nature",
   },
   {
-    src: "images/china/Lingering Garden.jpeg",
+    src: "/images/country/china/Lingering Garden.jpeg",
     title: "Lingering Garden",
-    category: "Culture"
+    category: "Culture",
   },
   {
-    src: "images/china/Pingjiang Road.jpeg",
+    src: "/images/country/china/Pingjiang Road.jpeg",
     title: "Pingjiang Road",
-    category: "Culture"
+    category: "Culture",
   },
   {
-    src: "images/china/Shanghai.jpeg",
+    src: "/images/country/china/Shanghai.jpeg",
     title: "Shanghai",
-    category: "City / Modern"
+    category: "City / Modern",
   },
   {
-    src: "images/china/The Bund and Yu Garden.jpeg",
+    src: "/images/country/china/The Bund and Yu Garden.jpeg",
     title: "The Bund and Yu Garden",
-    category: "Architecture / Landmark"
+    category: "Architecture / Landmark",
   },
   {
-    src: "images/china/Nanjing Road.jpeg",
+    src: "/images/country/china/Nanjing Road.jpeg",
     title: "Nanjing Road",
-    category: "City / Modern"
+    category: "City / Modern",
   },
   {
-    src: "images/china/Shanghai Tower.jpeg",
+    src: "/images/country/china/Shanghai Tower.jpeg",
     title: "Shanghai Tower",
-    category: "Architecture / Landmark"
-  }
+    category: "Architecture / Landmark",
+  },
 ];
 
 export default gallery;

@@ -6,7 +6,11 @@ function KualaLumpur() {
   return (
     <>
       <section className="kyml">
-        <img src="/gambar/malaysia.png" className="bg-img" alt="Malaysia" />
+        <img
+          src="/images/country/malaysia/malaysia.png"
+          className="bg-img"
+          alt="Malaysia"
+        />
 
         <div className="container mt-5" id="kymalay">
           <div className="row align-items-center mb-3 gy-2">
@@ -30,19 +34,34 @@ function KualaLumpur() {
 
           <div className="row">
             <div className="col-md-4">
-              <img src="/gambar/kl1.jpeg" id="kli1" className="img-fluid" />
+              <img
+                src="/images/country/malaysia/kl1.jpeg"
+                id="kli1"
+                className="img-fluid"
+                alt="Kuala Lumpur Tower"
+              />
               <p id="ml1">
                 Ikon Malaysia yaitu twintower yang megah dan tinggi.
               </p>
             </div>
 
             <div className="col-md-4">
-              <img src="/gambar/kl2.jpeg" id="kli1" className="img-fluid" />
+              <img
+                src="/images/country/malaysia/kl2.jpeg"
+                id="kli1"
+                className="img-fluid"
+                alt="Shopping Center"
+              />
               <p id="ml1">Pusat belanja dan kuliner malam.</p>
             </div>
 
             <div className="col-md-4">
-              <img src="/gambar/kl3.jpeg" id="kli1" className="img-fluid" />
+              <img
+                src="/images/country/malaysia/kl3.jpeg"
+                id="kli1"
+                className="img-fluid"
+                alt="Cultural Center"
+              />
               <p id="ml1">
                 Pusat budaya, seni dan kerajinan Malaysia — menjual batik,
                 kerajinan kayu, suvenir khas, dan barang-barang artisan.

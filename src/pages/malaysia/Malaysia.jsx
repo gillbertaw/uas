@@ -26,7 +26,11 @@ function Malaysia() {
   return (
     <>
       <section className="kyml">
-        <img src="/gambar/malaysia.png" className="bg-img" alt="Malaysia" />
+        <img
+          src="/images/country/malaysia/malaysia.png"
+          className="bg-img"
+          alt="Malaysia"
+        />
 
         <div className="container" id="kymalay">
           <div className="row align-items-center mb-4 gy-2">
@@ -68,8 +72,9 @@ function Malaysia() {
               >
                 <div className="card h-100 shadow-sm">
                   <img
-                    src="/gambar/kuala_lumpur.jpeg"
+                    src="/images/country/malaysia/kuala_lumpur.jpeg"
                     className="card-img-top"
+                    alt="Kuala Lumpur"
                   />
                   <div className="card-body">
                     <h5>Day 1–2 Kuala Lumpur</h5>
@@ -81,7 +86,11 @@ function Malaysia() {
             <div className="col-md-4">
               <Link to="gambar/malaysia/penang">
                 <div className="card h-100 shadow-sm">
-                  <img src="/gambar/penang.jpeg" className="card-img-top" />
+                  <img
+                    src="/images/country/malaysia/penang.jpeg"
+                    className="card-img-top"
+                    alt="Penang"
+                  />
                   <div className="card-body">
                     <h5>Day 3–4 Penang</h5>
                   </div>
@@ -92,7 +101,11 @@ function Malaysia() {
             <div className="col-md-4">
               <Link to="/malaysia/langkawi">
                 <div className="card h-100 shadow-sm">
-                  <img src="/gambar/langkawi.jpeg" className="card-img-top" />
+                  <img
+                    src="/images/country/malaysia/langkawi.jpeg"
+                    className="card-img-top"
+                    alt="Langkawi"
+                  />
                   <div className="card-body">
                     <h5>Day 5–6 Langkawi</h5>
                   </div>

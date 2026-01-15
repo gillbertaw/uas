@@ -1,16 +1,21 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import China from "./pages/China";
-import Korea from "./pages/Korea";
-import FAQ from "./pages/FAQ";
-import ComingSoon from './pages/ComingSoon';
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import China from "./pages/china/China";
+import Korea from "./pages/korea/Korea";
+import FAQ from "./pages/faq/FAQ";
+import ComingSoon from "./pages/common/ComingSoon";
+
+import Login from "./pages/auth/Login";
+import ForgotPassword from "./pages/auth/ForgotPassword";
+import SignUp from "./pages/auth/SignUp";
+import ListTicket from "./pages/ticket/ListTicket";
 
 import Favorite from "./pages/favorite/Favorite";
 
@@ -25,7 +30,7 @@ import Bangkok from "./pages/thailand/Bangkok";
 
 import Vietnam from "./pages/vietnam/Vietnam";
 import Hanoi from "./pages/vietnam/Hanoi";
-import Australia from './pages/Australia';
+import Australia from "./pages/australia/Australia";
 
 class App extends React.Component {
   render() {
@@ -59,6 +64,11 @@ class App extends React.Component {
 
             {/* fallback to home */}
             <Route path="*" element={<ComingSoon />} />
+
+            <Route path="/login" element={<Login />} />
+            <Route path="/forgotpass" element={<ForgotPassword />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/list-ticket" element={<ListTicket />} />
           </Routes>
         </main>
         <Footer />

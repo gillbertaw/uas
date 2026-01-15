@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/footer.css"
+import "../styles/footer.css";
 
 class Footer extends React.Component {
   render() {
@@ -8,9 +8,10 @@ class Footer extends React.Component {
       <footer>
         <div className="deidrich-footer mt-5">
           <div className="container d-flex justify-content-between flex-wrap">
-
             <div className="col col-6">
-              <p><b>About Travelling</b></p>
+              <p>
+                <b>About Travelling</b>
+              </p>
               <Link to="/how-to-book">How to Book</Link>
               <Link to="/about">About Us</Link>
               <Link to="/news">News Update</Link>
@@ -19,12 +20,13 @@ class Footer extends React.Component {
             </div>
 
             <div className="col col-6">
-              <p><b>Follow us on</b></p>
-              <Link to="/instagram"><img src="" alt="" />Instagram</Link>
-              <Link to="/facebook"><img src="" alt="" />Facebook</Link>
-              <Link to="/youtube"><img src="" alt="" />Youtube</Link>
+              <p>
+                <b>Follow us on</b>
+              </p>
+              <Link to="/instagram">Instagram</Link>
+              <Link to="/facebook">Facebook</Link>
+              <Link to="/youtube">Youtube</Link>
             </div>
-
           </div>
         </div>
       </footer>
