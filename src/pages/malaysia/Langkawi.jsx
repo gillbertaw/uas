@@ -26,7 +26,9 @@ function KualaLumpur() {
             </div>
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
-              <h2 className="fw-bold mb-0">Kuala Lumpur</h2>
+              <h2 className="fw-bold mb-0" id="judulmalay">
+                Kuala Lumpur
+              </h2>
             </div>
 
             <div className="col-12 col-md-2" />
@@ -35,36 +37,56 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/malaysia/lk1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="Pantai Cenang"
               />
-              <p id="ml1">
-                Ikon Malaysia yaitu twintower yang megah dan tinggi.
+              <p id="judulmalay">
+                Pantai Cenang.
+                <br />
+                Melihat sunset cantik & water sport.
               </p>
             </div>
 
             <div className="col-md-4">
-              <img
-                src="/images/country/malaysia/kl2.jpeg"
-                id="kli1"
-                className="img-fluid"
-                alt="Shopping Center"
-              />
-              <p id="ml1">Pusat belanja dan kuliner malam.</p>
+              <div className="d-flex justify-content-between">
+                <div className="text-center">
+                  <img
+                    src="/images/country/malaysia/lk2.jpeg"
+                    className="img-fluid kli-img"
+                    alt="Cable Car"
+                    id="kli2"
+                  />
+                  <p id="judulmalay">
+                    Menaiki gondola di atas hutan tropis dan tebing curam.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <img
+                    src="/images/country/malaysia/lk21.jpeg"
+                    className="img-fluid kli-img"
+                    alt="Langkawi Sky Bridge"
+                  />
+                  <p id="judulmalay">
+                    Melihat pemandangan laut dan gunung dari atas
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/malaysia/lk3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Pasar Seni"
               />
-              <p id="ml1">
-                Pusat budaya, seni dan kerajinan Malaysia — menjual batik,
-                kerajinan kayu, suvenir khas, dan barang-barang artisan.
+              <p id="judulmalay">
+                Pasar Seni. <br />
+                Tempat perbelanja parfum, cokelat, barang elektronik lebih
+                murah.
               </p>
             </div>
           </div>

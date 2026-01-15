@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 function KualaLumpur() {
   const navigate = useNavigate();
-
+  
   return (
     <>
       <section className="kyml">
