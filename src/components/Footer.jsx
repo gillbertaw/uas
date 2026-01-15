@@ -20,9 +20,9 @@ class Footer extends React.Component {
 
             <div className="col col-6">
               <p><b>Follow us on</b></p>
-              <Link to="#"><img src="" alt="" />Instagram</Link>
-              <Link to="#"><img src="" alt="" />Facebook</Link>
-              <Link to="#"><img src="" alt="" />Youtube</Link>
+              <Link to="/instagram"><img src="" alt="" />Instagram</Link>
+              <Link to="/facebook"><img src="" alt="" />Facebook</Link>
+              <Link to="/youtube"><img src="" alt="" />Youtube</Link>
             </div>
 
           </div>

@@ -10,6 +10,7 @@ import About from "./pages/About";
 import China from "./pages/China";
 import Korea from "./pages/Korea";
 import FAQ from "./pages/FAQ";
+import ComingSoon from './pages/ComingSoon';
 
 import Favorite from "./pages/favorite/Favorite";
 
@@ -24,6 +25,7 @@ import Bangkok from "./pages/thailand/Bangkok";
 
 import Vietnam from "./pages/vietnam/Vietnam";
 import Hanoi from "./pages/vietnam/Hanoi";
+import Australia from './pages/Australia';
 
 class App extends React.Component {
   render() {
@@ -41,6 +43,8 @@ class App extends React.Component {
 
             <Route path="/favorite" element={<Favorite />} />
 
+            <Route path="/australia" element={<Australia />} />
+
             <Route path="/malaysia" element={<Malaysia />} />
             <Route path="/malaysia/kuala-lumpur" element={<KualaLumpur />} />
 
@@ -54,7 +58,7 @@ class App extends React.Component {
             <Route path="/vietnam/hanoi" element={<Hanoi />} />
 
             {/* fallback to home */}
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<ComingSoon />} />
           </Routes>
         </main>
         <Footer />
