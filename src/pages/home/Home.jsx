@@ -19,8 +19,17 @@ class Home extends React.Component {
             <p>“No one can choose your path but you.”</p>
 
             <div className="hero-cta">
-              <Link className="region-btn btn btn-primary" to="/list-ticket">Get Started</Link>
-              <a className="btn play-btn" href={heroVideo} target="_blank" rel="noopener noreferrer">▶ Watch</a>
+              <Link className="region-btn btn btn-primary" to="/list-ticket">
+                Get Started
+              </Link>
+              <a
+                className="btn play-btn"
+                href={heroVideo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ Watch
+              </a>
             </div>
           </div>
         </div>
@@ -50,7 +59,9 @@ class Home extends React.Component {
         </div>
 
         <div className="select-region">
-          <Link className="region-btn btn-secondary btn-lg" to="/list-ticket">Get Started</Link>
+          <Link className="region-btn btn-secondary btn-lg" to="/list-ticket">
+            Get Started
+          </Link>
         </div>
       </div>
     );

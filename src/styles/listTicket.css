@@ -6,6 +6,13 @@
 
 .LT_body {
   min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .transparent-background {
@@ -133,43 +140,60 @@ button[type="submit"].srch {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 85vh;
-  margin: 50px 50px 10px;
+  flex: 1;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  padding: 60px 60px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-list {
   display: flex;
-  gap: 20px;
-  padding: 120px 0 40px;
-  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .card-item {
   color: white;
-  max-width: 270px;
-  width: auto;
+  min-width: 280px;
   height: auto;
-  min-height: 400px;
-  padding: 35px;
+  min-height: 420px;
+  padding: 35px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 100%;
   box-sizing: border-box;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
 }
 
-.slider-wrapper {
-  overflow: hidden;
-  max-width: 1200px;
-  margin: 0 70px 55px;
+.card-item:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-15px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 .negara-image_LT {
@@ -247,3 +271,115 @@ button[type="submit"].srch {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Swiper Navigation Styles */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #333;
+  transition: all 0.3s ease;
+  z-index: 10;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 1);
+  width: 36px;
+  border-radius: 7px;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.15);
+}
+
+/* Responsive Swiper */
+@media (max-width: 1024px) {
+  .swiper-container {
+    padding: 50px 40px 100px;
+  }
+
+  .swiper-button-prev {
+    left: 15px;
+  }
+
+  .swiper-button-next {
+    right: 15px;
+  }
+
+  .card-item {
+    min-width: 250px;
+    min-height: 380px;
+    padding: 25px 15px;
+  }
+
+  .negara-image_LT {
+    width: 180px;
+    height: 180px;
+  }
+
+  .namabg_LT {
+    font-size: 1.3rem;
+  }
+
+  .harga_LT {
+    font-size: 1rem;
+  }
+}
+

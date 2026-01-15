@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function Penang() {
   const navigate = useNavigate();
 
   return (
@@ -26,7 +26,9 @@ function KualaLumpur() {
             </div>
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
-              <h2 className="fw-bold mb-0">Kuala Lumpur</h2>
+              <h2 className="fw-bold mb-0" id="judulmalay">
+                Penang
+              </h2>
             </div>
 
             <div className="col-12 col-md-2" />
@@ -35,36 +37,44 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/malaysia/p1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="George Town"
               />
-              <p id="ml1">
-                Ikon Malaysia yaitu twintower yang megah dan tinggi.
+              <p id="ml1" id="judulmalay">
+                George Town.
+                <br />
+                Bangunan kolonial & street art.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl2.jpeg"
+                src="/images/country/malaysia/p2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Shopping Center"
+                alt="Gurney Drive Food Court"
               />
-              <p id="ml1">Pusat belanja dan kuliner malam.</p>
+              <p id="ml1" id="judulmalay">
+                Gurney Drive Food Court.
+                <br />
+                jajanan lokal terkenal.
+              </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/malaysia/p3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Penang Hill & kek Lok Si Temple"
               />
-              <p id="ml1">
-                Pusat budaya, seni dan kerajinan Malaysia — menjual batik,
-                kerajinan kayu, suvenir khas, dan barang-barang artisan.
+              <p id="ml1" id="judulmalay">
+                Penang Hill & kek Lok Si Temple.
+                <br />
+                Melihat pemandangan kota Penang
+                dari atas.
               </p>
             </div>
           </div>
@@ -74,4 +84,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default Penang;
