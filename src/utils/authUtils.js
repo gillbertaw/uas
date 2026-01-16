@@ -1,38 +1,29 @@
-// Auth Utility Functions
-// Simulates a JSON database stored in localStorage
-
 const USERS_KEY = "users_database";
 
-// Initialize users database if not exists
 const initDatabase = () => {
   if (!localStorage.getItem(USERS_KEY)) {
     localStorage.setItem(USERS_KEY, JSON.stringify([]));
   }
 };
 
-// Get all users from database
 export const getAllUsers = () => {
   initDatabase();
   return JSON.parse(localStorage.getItem(USERS_KEY)) || [];
 };
 
-// Find user by username
 export const findUserByUsername = (username) => {
   const users = getAllUsers();
   return users.find((user) => user.username === username);
 };
 
-// Find user by email
 export const findUserByEmail = (email) => {
   const users = getAllUsers();
   return users.find((user) => user.email === email);
 };
 
-// Add new user to database
 export const addUser = (username, email, password) => {
   const users = getAllUsers();
   
-  // Check if user already exists
   if (findUserByUsername(username)) {
     return { success: false, message: "Username sudah terdaftar" };
   }
@@ -45,7 +36,7 @@ export const addUser = (username, email, password) => {
     id: Date.now(),
     username,
     email,
-    password, // In production, hash the password
+    password,
     createdAt: new Date().toISOString(),
   };
 
@@ -104,13 +95,11 @@ export const resetPassword = (email, newPassword) => {
   return { success: true, message: "Password berhasil direset" };
 };
 
-// Get current logged-in user
 export const getCurrentUser = () => {
   const userStr = localStorage.getItem("currentUser");
   return userStr ? JSON.parse(userStr) : null;
 };
 
-// Set current logged-in user
 export const setCurrentUser = (user) => {
   if (user) {
     localStorage.setItem("currentUser", JSON.stringify(user));
@@ -119,12 +108,10 @@ export const setCurrentUser = (user) => {
   }
 };
 
-// Logout
 export const logout = () => {
   localStorage.removeItem("currentUser");
 };
 
-// Export all users for debugging (optional)
 export const exportUsers = () => {
   return getAllUsers();
 };
