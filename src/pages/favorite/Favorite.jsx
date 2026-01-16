@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { FaHeartBroken } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../styles/favorit.css";
 
-
-
 function Favorite() {
+  const navigate = useNavigate();
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
@@ -21,9 +20,23 @@ function Favorite() {
 
   return (
     <div className="container py-5" id="kymalay">
-      <h2 className="fw-bold mb-4 text-center" id="favorit">
-        ❤️ Destinasi Favorit
-      </h2>
+      <div className="row align-items-center mb-3 gy-2">
+        <div className="col-12 col-md-2 text-start d-flex align-items-center">
+          <button
+            onClick={() => navigate(-1)}
+            className="btn btn-secondary w-100"
+            aria-label="Kembali"
+            id="back"
+          >
+            ← Kembali
+          </button>
+        </div>
+        <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
+          <h2 className="fw-bold mb-4 text-center" id="favorit">
+            ❤️ Destinasi Favorit
+          </h2>
+        </div>
+      </div>
 
       {favorites.length === 0 ? (
         <p className="text-center text-muted">Belum ada destinasi favorit.</p>
