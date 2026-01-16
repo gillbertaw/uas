@@ -28,9 +28,9 @@ function Vietnam() {
     <>
       <section className="kyml">
         <img
-          src="/images/country/singapore/singapura.jpeg"
+          src="/images/country/vietnam/vietnam.jpeg"
           className="bg-img"
-          alt="Singapore"
+          alt="Vietnam"
         />
 
         <div className="container" id="kymalay">
