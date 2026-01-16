@@ -27,7 +27,7 @@ function Hanoi() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Bangkok
+                Hanoi
               </h2>
             </div>
           </div>
@@ -35,43 +35,43 @@ function Hanoi() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk1.jpeg"
+                src="/images/country/vietnam/h1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Grand Palace & Wat Phra Kaew"
+                alt="Old Quarter"
               />
               <p id="judulmalay">
-                Grand Palace & Wat Phra Kaew.
+                Old Quarter.
                 <br />
-                Kompleks bangunan megah, pusat kebudayaan dan sejarah Thailand.
+                Kawasan bersejarah dengan arsitektur kolonial Prancis dan budaya
+                lokal yang kaya.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk2.jpeg"
+                src="/images/country/vietnam/h2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Amphawa Floating Market"
+                alt="Hoan Kiem Lake & Ngoc Son Temple"
               />
               <p id="judulmalay">
-                Amphawa Floating Market. <br />
-                Pasar terapung yang terkenal dengan makanan lezat dan suasana
-                yang hidup.
+                Hoan Kiem Lake & Ngoc Son Temple. <br />
+                Danau yang indah dengan kuil di tengahnya, simbol kota Hanoi.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk3.jpeg"
+                src="/images/country/vietnam/h3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Chao Phraya River Cruise"
+                alt="Ho Chi Minh Mausoleum"
               />
               <p id="judulmalay">
-                Chao Phraya River Cruise.
+                Ho Chi Minh Mausoleum.
                 <br />
-                Menyusuri sungai dengan pemandangan indah, termasuk Wat Arun.
+                Makam pemimpin revolusi Vietnam yang dikelilingi taman yang indah.
               </p>
             </div>
           </div>
