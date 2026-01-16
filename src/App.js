@@ -37,6 +37,9 @@ import Bangkok from "./pages/thailand/Bangkok";
 
 import Vietnam from "./pages/vietnam/Vietnam";
 import Hanoi from "./pages/vietnam/Hanoi";
+import HaLongBay from "./pages/vietnam/HaLongBay";
+import HoiAn from "./pages/vietnam/HoiAn";
+
 import Australia from "./pages/australia/Australia";
 
 class App extends React.Component {
@@ -74,6 +77,8 @@ class App extends React.Component {
 
             <Route path="/vietnam" element={<Vietnam />} />
             <Route path="/vietnam/hanoi" element={<Hanoi />} />
+            <Route path="/vietnam/ha-long-bay" element={<HaLongBay />} />
+            <Route path="/vietnam/hoi-an" element={<HoiAn />} />
 
             {/* fallback to home */}
             <Route path="*" element={<ComingSoon />} />
