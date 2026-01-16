@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function Hanoi() {
+function Bangkok() {
   const navigate = useNavigate();
 
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/vietnam/hanoi.jpeg"
+          src="/images/country/thailand/Bangkok.jpeg"
           className="bg-img"
-          alt="Hanoi"
+          alt="Bangkok"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -81,4 +81,4 @@ function Hanoi() {
   );
 }
 
-export default Hanoi;
+export default Bangkok;
