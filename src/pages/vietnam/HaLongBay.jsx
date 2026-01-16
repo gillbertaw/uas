@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function Bangkok() {
+function HaLongBay() {
   const navigate = useNavigate();
 
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/thailand/Bangkok.jpeg"
+          src="/images/country/vietnam/HLB.jpeg"
           className="bg-img"
-          alt="Bangkok"
+          alt="Ha Long Bay"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function Bangkok() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Bangkok
+                Ha Long Bay
               </h2>
             </div>
           </div>
@@ -35,43 +35,45 @@ function Bangkok() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk1.jpeg"
+                src="/images/country/vietnam/hb1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Grand Palace & Wat Phra Kaew"
+                alt="Cruise di Ha Long Bay"
               />
               <p id="judulmalay">
-                Grand Palace & Wat Phra Kaew.
+                Cruise di Ha Long Bay.
                 <br />
-                Kompleks bangunan megah, pusat kebudayaan dan sejarah Thailand.
+                Menyusuri keindahan alam dan formasi batu karst yang menakjubkan
+                dan pengalaman menginap di kapal tradisional.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk2.jpeg"
+                src="/images/country/vietnam/hb2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Amphawa Floating Market"
+                alt="Kayaking atau Swimming"
               />
               <p id="judulmalay">
-                Amphawa Floating Market. <br />
-                Pasar terapung yang terkenal dengan makanan lezat dan suasana
-                yang hidup.
+                Kayaking atau Swimming. <br />
+                Menikmati keindahan alam Ha Long Bay dengan aktivitas air yang
+                menyenangkan.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk3.jpeg"
+                src="/images/country/vietnam/hb3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Chao Phraya River Cruise"
+                alt="Kunjungan ke Gua & Desa Nelayan"
               />
               <p id="judulmalay">
-                Chao Phraya River Cruise.
+                Kunjungan ke Gua & Desa Nelayan.
                 <br />
-                Menyusuri sungai dengan pemandangan indah, termasuk Wat Arun.
+                Menjelajahi gua-gua indah dan desa nelayan tradisional di sekitar
+                Ha Long Bay.
               </p>
             </div>
           </div>
@@ -81,4 +83,4 @@ function Bangkok() {
   );
 }
 
-export default Bangkok;
+export default HaLongBay;

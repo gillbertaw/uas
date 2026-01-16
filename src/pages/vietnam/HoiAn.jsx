@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function Bangkok() {
+function HoiAn() {
   const navigate = useNavigate();
 
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/thailand/Bangkok.jpeg"
+          src="/images/country/vietnam/HA.jpeg"
           className="bg-img"
-          alt="Bangkok"
+          alt="Hoi An"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function Bangkok() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Bangkok
+                Hoi An
               </h2>
             </div>
           </div>
@@ -35,43 +35,44 @@ function Bangkok() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk1.jpeg"
+                src="/images/country/vietnam/ha1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Grand Palace & Wat Phra Kaew"
+                alt="Hoi An Ancient Town"
               />
               <p id="judulmalay">
-                Grand Palace & Wat Phra Kaew.
+                Hoi An Ancient Town.
                 <br />
-                Kompleks bangunan megah, pusat kebudayaan dan sejarah Thailand.
+                Kota bersejarah yang terkenal dengan arsitektur kuno dan suasana
+                yang romantis.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk2.jpeg"
+                src="/images/country/vietnam/ha2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Amphawa Floating Market"
+                alt="Japanese Covered Bridge"
               />
               <p id="judulmalay">
-                Amphawa Floating Market. <br />
-                Pasar terapung yang terkenal dengan makanan lezat dan suasana
-                yang hidup.
+                Japanese Covered Bridge. <br />
+                Jembatan ikonik yang mencerminkan warisan budaya Jepang di Hoi
+                An.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/bk3.jpeg"
+                src="/images/country/vietnam/ha3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Chao Phraya River Cruise"
+                alt="Pantai An Bang / My Khe Beach"
               />
               <p id="judulmalay">
-                Chao Phraya River Cruise.
+                Pantai An Bang / My Khe Beach.
                 <br />
-                Menyusuri sungai dengan pemandangan indah, termasuk Wat Arun.
+                Tempat bersantai, berenang, atau menikmati sunset.
               </p>
             </div>
           </div>
@@ -81,4 +82,4 @@ function Bangkok() {
   );
 }
 
-export default Bangkok;
+export default HoiAn;
