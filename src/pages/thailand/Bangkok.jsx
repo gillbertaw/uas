@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function ChiangMai() {
+function Bangkok() {
   const navigate = useNavigate();
 
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/thailand/Chiang_Mai.jpeg"
+          src="/images/country/thailand/Bangkok.jpeg"
           className="bg-img"
-          alt="Chiang Mai"
+          alt="Bangkok"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function ChiangMai() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Chiang Mai
+                Bangkok
               </h2>
             </div>
           </div>
@@ -35,43 +35,43 @@ function ChiangMai() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/cm1.jpeg"
+                src="/images/country/thailand/bk1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuil Doi Suthep"
+                alt="Grand Palace & Wat Phra Kaew"
               />
-              <p id="ml1" id="judulmalay">
-                Kuil Doi Suthep.
+              <p id="judulmalay">
+                Grand Palace & Wat Phra Kaew.
                 <br />
-                Kuil di atas bukit, pemandangan kota bagus.
+                Kompleks bangunan megah, pusat kebudayaan dan sejarah Thailand.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/cm2.jpeg"
+                src="/images/country/thailand/bk2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Elephant Nature Park"
+                alt="Amphawa Floating Market"
               />
-              <p id="ml1" id="judulmalay">
-                Elephant Nature Park. <br />
-                Tempat perlindungan gajah yang terkenal di Chiang Mai. Bisa
-                berinteraksi dengan gajah secara etis (bukan sirkus).
+              <p id="judulmalay">
+                Amphawa Floating Market. <br />
+                Pasar terapung yang terkenal dengan makanan lezat dan suasana
+                yang hidup.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/thailand/cm3.jpeg"
+                src="/images/country/thailand/bk3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Doi Inthanon"
+                alt="Chao Phraya River Cruise"
               />
-              <p id="ml1" id="judulmalay">
-                Doi Inthanon.
+              <p id="judulmalay">
+                Chao Phraya River Cruise.
                 <br />
-                Gunung tertinggi Thailand, air terjun cantik.
+                Menyusuri sungai dengan pemandangan indah, termasuk Wat Arun.
               </p>
             </div>
           </div>
@@ -81,4 +81,4 @@ function ChiangMai() {
   );
 }
 
-export default ChiangMai;
+export default Bangkok;
