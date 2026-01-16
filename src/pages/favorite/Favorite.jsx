@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaHeartBroken } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "../../styles/favorit.css";
 
 
 
@@ -20,7 +21,9 @@ function Favorite() {
 
   return (
     <div className="container py-5" id="kymalay">
-      <h2 className="fw-bold mb-4 text-center">❤️ Destinasi Favorit</h2>
+      <h2 className="fw-bold mb-4 text-center" id="favorit">
+        ❤️ Destinasi Favorit
+      </h2>
 
       {favorites.length === 0 ? (
         <p className="text-center text-muted">Belum ada destinasi favorit.</p>
