@@ -46,7 +46,6 @@ export const addUser = (username, email, password) => {
   return { success: true, message: "Akun berhasil dibuat" };
 };
 
-// Validate login credentials
 export const validateLogin = (username, password) => {
   if (!username) {
     return { success: false, message: "Username harus diisi" };
@@ -69,7 +68,7 @@ export const validateLogin = (username, password) => {
   return { success: true, message: "Login berhasil", user };
 };
 
-// Reset password by email
+
 export const resetPassword = (email, newPassword) => {
   if (!email) {
     return { success: false, message: "Email harus diisi" };
