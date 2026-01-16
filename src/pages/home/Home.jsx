@@ -8,8 +8,8 @@ import homeFlags from '../../data/homeFlag';
 class Home extends React.Component {
   render() {
     return (
-      <div className="container deidrich-badan">
-      <video className="awan-video" src={heroVideo} autoPlay muted loop playsInline />
+    <div className="container deidrich-badan">
+      <div className="video-container"><video className="awan-video" src={heroVideo} autoPlay muted loop playsInline />
         <div className="background-awan">
           <div className="awan-overlay" />
           <div className="welcome">
@@ -32,6 +32,7 @@ class Home extends React.Component {
               </a>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="map">

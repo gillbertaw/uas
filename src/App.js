@@ -34,10 +34,10 @@ import ChiangMai from "./pages/thailand/ChiangMai";
 import Krabi from "./pages/thailand/Krabi";
 import Bangkok from "./pages/thailand/Bangkok";
 
-
 import Vietnam from "./pages/vietnam/Vietnam";
 import Hanoi from "./pages/vietnam/Hanoi";
 import Australia from "./pages/australia/Australia";
+import Swizz from "pages/switzerland/Swizz";
 
 class App extends React.Component {
   render() {
@@ -56,6 +56,7 @@ class App extends React.Component {
             <Route path="/favorite" element={<Favorite />} />
 
             <Route path="/australia" element={<Australia />} />
+            <Route path="/switzerland" element={<Swizz />} />
 
             <Route path="/malaysia" element={<Malaysia />} />
             <Route path="/malaysia/kuala-lumpur" element={<KualaLumpur />} />
