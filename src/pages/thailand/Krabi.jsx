@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function Krabi() {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/thailand/krabi.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Krabi"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function KualaLumpur() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Kuala Lumpur
+                Phuket/Krabi
               </h2>
             </div>
           </div>
@@ -35,45 +35,44 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/thailand/pk1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="Phang Nga Bay / Hong Islands"
               />
               <p id="judulmalay">
-                Kuala Lumpur Tower.
+                Phang Nga Bay / Hong Islands.
                 <br />
-                Ikon Malaysia yaitu twintower yang megah dan tinggi. Spot
-                foto-foto yang indah sehingga tidak dapat dilewatkan.
+                Keindahan alam dengan pulau-pulau karst yang menakjubkan. Bisa
+                naik boat keliling batu kapur & laguna.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl2.jpeg"
+                src="/images/country/thailand/pk2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Shopping Center"
+                alt="Railay Beach"
               />
               <p id="judulmalay">
-                Shopping Center.
-                <br />
-                Tempat pusat belanja dan kuliner malam yang enak dan harus
-                dicoba.
+                Railay Beach. <br />
+                Pantai indah dengan tebing karst, tempat favorit untuk panjat
+                tebing.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/thailand/pk3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Patong Beach"
               />
               <p id="judulmalay">
-                Cultural Center. <br/>Pusat budaya, seni dan kerajinan Malaysia —
-                menjual batik, kerajinan kayu, suvenir khas, dan barang-barang
-                artisan.
+                Patong Beach.
+                <br />
+                Pantai terkenal dengan kehidupan malam yang ramai.
               </p>
             </div>
           </div>
@@ -83,4 +82,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default Krabi;

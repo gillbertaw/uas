@@ -9,7 +9,7 @@ function Malaysia() {
     const malaysia = {
       id: "malaysia",
       title: "Malaysia",
-      image: "/gambar/malaysia.png",
+      image: "/images/country/malaysia/malaysia.png",
       link: "/malaysia",
     };
 
@@ -59,7 +59,7 @@ function Malaysia() {
                   className="btn btn-danger w-100"
                   id="fav"
                 >
-                  ❤️ Favorite Malaysia
+                  ❤️ Favorite
                 </button>
               </div>
             </div>
@@ -85,7 +85,7 @@ function Malaysia() {
             </div>
 
             <div className="col-md-4">
-              <Link to="/malaysia/penang">
+              <Link to="/malaysia/penang" className="text-decoration-none">
                 <div className="card h-100 shadow-sm">
                   <img
                     src="/images/country/malaysia/penang.jpeg"
@@ -100,7 +100,7 @@ function Malaysia() {
             </div>
 
             <div className="col-md-4">
-              <Link to="/malaysia/langkawi">
+              <Link to="/malaysia/langkawi" className="text-decoration-none">
                 <div className="card h-100 shadow-sm">
                   <img
                     src="/images/country/malaysia/langkawi.jpeg"

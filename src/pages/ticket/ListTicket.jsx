@@ -9,18 +9,18 @@ export default function ListTicket() {
   
   const cards = [
     {
-      title: "China",
-      img: "/images/country/china/Forbidden City.jpeg",
+      title: "Japan",
+      img: "/images/country/jepang.jpg",
       price: "22.779.000",
     },
     {
       title: "Malaysia",
-      img: "/images/country/malaysia/kuala_lumpur.jpeg",
+      img: "/images/country/malaysia.jpg",
       price: "2.559.000",
     },
     {
-      title: "Korea",
-      img: "/images/country/korea/Gamcheon Culture Village.jpeg",
+      title: "Thailand",
+      img: "/images/country/thailand.png",
       price: "6.899.000",
     },
     {
@@ -29,14 +29,29 @@ export default function ListTicket() {
       price: "5.679.000",
     },
     {
-      title: "Thailand",
-      img: "/images/country/thailand.png",
-      price: "7.899.000",
-    },
-    {
       title: "Vietnam",
       img: "/images/country/vietnam.jpg",
-      price: "4.500.000",
+      price: "12.999.000",
+    },
+    {
+      title: "Korea",
+      img: "/images/country/korea.jpeg",
+      price: "14.259.000",
+    },
+    {
+      title: "China",
+      img: "/images/country/china.jpeg",
+      price: "25.729.000",
+    },
+    {
+      title: "Australia",
+      img: "/images/country/australia.jpg",
+      price: "20.149.000",
+    },
+    {
+      title: "Switzerland",
+      img: "/images/country/switzerland.jpeg",
+      price: "28.849.000",
     },
   ];
 

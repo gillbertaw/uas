@@ -1,14 +1,54 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../styles/forgotPassword.css";
+import { resetPassword, findUserByEmail } from "../../utils/authUtils";
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Password change requested for:", email);
+    
+    // Validate email is filled
+    if (!email.trim()) {
+      alert("Email harus diisi");
+      return;
+    }
+
+    // Validate password is filled
+    if (!password.trim()) {
+      alert("Password baru harus diisi");
+      return;
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Format email tidak valid");
+      return;
+    }
+
+    // Check if email exists
+    if (!findUserByEmail(email)) {
+      alert("Email belum terdaftar. Silakan sign up terlebih dahulu");
+      return;
+    }
+
+    // Reset password
+    const result = resetPassword(email, password);
+    
+    if (result.success) {
+      alert("Password berhasil direset! Silakan login dengan password baru Anda");
+      // Clear form
+      setEmail("");
+      setPassword("");
+      // Redirect to login page
+      navigate("/login");
+    } else {
+      alert(result.message);
+    }
   };
 
   const bg =
@@ -35,7 +75,7 @@ export default function ForgotPassword() {
           <form onSubmit={handleSubmit}>
             <div className="inputFP">
               <span className="iconFP">
-                <img src="/images/icons/user.png" alt="Email Icon" width="24" />
+                <img src="/images/icons/round_email_black_24dp.png" alt="Email Icon" width="24" />
               </span>
               <input
                 type="email"
@@ -48,7 +88,7 @@ export default function ForgotPassword() {
             <div className="inputFP">
               <span className="iconFP">
                 <img
-                  src="/images/icons/user.png"
+                  src="/images/icons/round_lock_black_24dp.png"
                   alt="Password Icon"
                   width="24"
                 />

@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function MarinaBay() {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/singapore/Marina.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Marina Bay"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function KualaLumpur() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Kuala Lumpur
+                Marina Bay Area
               </h2>
             </div>
           </div>
@@ -35,47 +35,48 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/singapore/m1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="Marina Bay Sands Skypark"
               />
               <p id="judulmalay">
-                Kuala Lumpur Tower.
+                Marina Bay Sands Skypark.
                 <br />
-                Ikon Malaysia yaitu twintower yang megah dan tinggi. Spot
-                foto-foto yang indah sehingga tidak dapat dilewatkan.
+                Ikon Kota Singapura ,tempat untuk wisata kota, foto-foto, dan
+                malam hari.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl2.jpeg"
+                src="/images/country/singapore/m3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Shopping Center"
+                alt="Spectra Light Show"
               />
               <p id="judulmalay">
-                Shopping Center.
-                <br />
-                Tempat pusat belanja dan kuliner malam yang enak dan harus
-                dicoba.
+                Spectra Light Show. <br />
+                Pertunjukan cahaya dan air yang menakjubkan di Marina Bay,
+                menampilkan sinar laser dan musik yang memukau.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/singapore/m2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Gardens by the Bay"
               />
               <p id="judulmalay">
-                Cultural Center. <br/>Pusat budaya, seni dan kerajinan Malaysia —
-                menjual batik, kerajinan kayu, suvenir khas, dan barang-barang
-                artisan.
+                Gardens by the Bay.
+                <br />
+                Kombinasi arsitektur futuristik dengan taman tropis: memberikan
+                pengalaman yang berbeda dari taman kota biasa.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -83,4 +84,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default MarinaBay;

@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function ChinaTown() {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/singapore/Ct.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="China Town"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function KualaLumpur() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Kuala Lumpur
+                Chinatown, Little India & Kampong Glam
               </h2>
             </div>
           </div>
@@ -35,45 +35,43 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/singapore/ct1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="Chinatown"
               />
               <p id="judulmalay">
-                Kuala Lumpur Tower.
+                Chinatown.
                 <br />
-                Ikon Malaysia yaitu twintower yang megah dan tinggi. Spot
-                foto-foto yang indah sehingga tidak dapat dilewatkan.
+                Kuil Buddha Tooth Relic, souvenir murah, makanan khas.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl2.jpeg"
+                src="/images/country/singapore/ct2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Shopping Center"
+                alt="Kampong Glam"
               />
               <p id="judulmalay">
-                Shopping Center.
-                <br />
-                Tempat pusat belanja dan kuliner malam yang enak dan harus
-                dicoba.
+                Kampong Glam. <br />
+                Kawasan budaya Melayu yang kaya dengan sejarah dan seni.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/singapore/ct3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Little India"
               />
               <p id="judulmalay">
-                Cultural Center. <br/>Pusat budaya, seni dan kerajinan Malaysia —
-                menjual batik, kerajinan kayu, suvenir khas, dan barang-barang
-                artisan.
+                Little India.
+                <br />
+                Melihat budaya, kuliner, dan belanja, dengan fokus pada
+                pengalaman tradisional India yang hidup di tengah kota modern.
               </p>
             </div>
           </div>
@@ -83,4 +81,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default ChinaTown;

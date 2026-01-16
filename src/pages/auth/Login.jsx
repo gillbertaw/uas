@@ -1,15 +1,40 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../styles/login.css";
+import { validateLogin, setCurrentUser } from "../../utils/authUtils";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [remember, setRemember] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Login attempt:", { username, password, remember });
+    
+    // Validate input
+    if (!username.trim()) {
+      alert("Username harus diisi");
+      return;
+    }
+
+    if (!password.trim()) {
+      alert("Password harus diisi");
+      return;
+    }
+
+    // Validate login credentials
+    const result = validateLogin(username, password);
+    
+    if (result.success) {
+      // Set current user
+      setCurrentUser(result.user);
+      alert("Login berhasil! Selamat datang " + username);
+      // Redirect to home
+      navigate("/");
+    } else {
+      alert(result.message);
+    }
   };
 
   const bg = process.env.PUBLIC_URL + "/images/auth/background_login.png";
@@ -36,7 +61,7 @@ export default function Login() {
             <div className="inputLI">
               <span className="iconlgn">
                 <img
-                  src="/images/icons/user.png"
+                  src="/images/icons/round_account_circle_black_24dp.png"
                   alt="Username Icon"
                   width="24"
                 />
@@ -52,7 +77,7 @@ export default function Login() {
             <div className="inputLI">
               <span className="iconlgn">
                 <img
-                  src="/images/icons/user.png" // Using user.png as placeholder for lock
+                  src="/images/icons/round_lock_black_24dp.png"
                   alt="Password Icon"
                   width="24"
                 />

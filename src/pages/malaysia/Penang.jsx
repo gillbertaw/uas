@@ -30,8 +30,6 @@ function Penang() {
                 Penang
               </h2>
             </div>
-
-            <div className="col-12 col-md-2" />
           </div>
 
           <div className="row">
@@ -42,7 +40,7 @@ function Penang() {
                 className="img-fluid"
                 alt="George Town"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 George Town.
                 <br />
                 Bangunan kolonial & street art.
@@ -56,7 +54,7 @@ function Penang() {
                 className="img-fluid"
                 alt="Gurney Drive Food Court"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Gurney Drive Food Court.
                 <br />
                 jajanan lokal terkenal.
@@ -70,7 +68,7 @@ function Penang() {
                 className="img-fluid"
                 alt="Penang Hill & kek Lok Si Temple"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Penang Hill & kek Lok Si Temple.
                 <br />
                 Melihat pemandangan kota Penang
