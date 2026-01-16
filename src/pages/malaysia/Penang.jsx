@@ -7,9 +7,9 @@ function Penang() {
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/malaysia/penang.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Penang"
         />
 
         <div className="container mt-5" id="kymalay">

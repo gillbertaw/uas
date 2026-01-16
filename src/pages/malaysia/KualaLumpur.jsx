@@ -7,9 +7,9 @@ function KualaLumpur() {
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/malaysia/kuala_lumpur.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Kuala Lumpur"
         />
 
         <div className="container mt-5" id="kymalay">

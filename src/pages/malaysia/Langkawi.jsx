@@ -7,9 +7,9 @@ function Langkawi() {
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/malaysia/langkawi.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Langkawi"
         />
 
         <div className="container mt-5" id="kymalay">
