@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 
-function KualaLumpur() {
+function ChiangMai() {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/thailand/Chiang_Mai.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Chiang Mai"
         />
 
         <div className="container mt-5" id="kymalay">
@@ -27,7 +27,7 @@ function KualaLumpur() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Kuala Lumpur
+                Chiang Mai
               </h2>
             </div>
           </div>
@@ -35,45 +35,43 @@ function KualaLumpur() {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl1.jpeg"
+                src="/images/country/thailand/cm1.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Kuala Lumpur Tower"
+                alt="Kuil Doi Suthep"
               />
               <p id="judulmalay">
-                Kuala Lumpur Tower.
+                Kuil Doi Suthep.
                 <br />
-                Ikon Malaysia yaitu twintower yang megah dan tinggi. Spot
-                foto-foto yang indah sehingga tidak dapat dilewatkan.
+                Kuil di atas bukit, pemandangan kota bagus.
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl2.jpeg"
+                src="/images/country/thailand/cm2.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Shopping Center"
+                alt="Elephant Nature Park"
               />
               <p id="judulmalay">
-                Shopping Center.
-                <br />
-                Tempat pusat belanja dan kuliner malam yang enak dan harus
-                dicoba.
+                Elephant Nature Park. <br />
+                Tempat perlindungan gajah yang terkenal di Chiang Mai. Bisa
+                berinteraksi dengan gajah secara etis (bukan sirkus).
               </p>
             </div>
 
             <div className="col-md-4">
               <img
-                src="/images/country/malaysia/kl3.jpeg"
+                src="/images/country/thailand/cm3.jpeg"
                 id="kli1"
                 className="img-fluid"
-                alt="Cultural Center"
+                alt="Doi Inthanon"
               />
               <p id="judulmalay">
-                Cultural Center. <br/>Pusat budaya, seni dan kerajinan Malaysia —
-                menjual batik, kerajinan kayu, suvenir khas, dan barang-barang
-                artisan.
+                Doi Inthanon.
+                <br />
+                Gunung tertinggi Thailand, air terjun cantik.
               </p>
             </div>
           </div>
@@ -83,4 +81,4 @@ function KualaLumpur() {
   );
 }
 
-export default KualaLumpur;
+export default ChiangMai;

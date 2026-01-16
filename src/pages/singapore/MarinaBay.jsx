@@ -40,7 +40,7 @@ function MarinaBay() {
                 className="img-fluid"
                 alt="Marina Bay Sands Skypark"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Marina Bay Sands Skypark.
                 <br />
                 Ikon Kota Singapura ,tempat untuk wisata kota, foto-foto, dan
@@ -55,7 +55,7 @@ function MarinaBay() {
                 className="img-fluid"
                 alt="Spectra Light Show"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Spectra Light Show. <br />
                 Pertunjukan cahaya dan air yang menakjubkan di Marina Bay,
                 menampilkan sinar laser dan musik yang memukau.
@@ -69,7 +69,7 @@ function MarinaBay() {
                 className="img-fluid"
                 alt="Gardens by the Bay"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Gardens by the Bay.
                 <br />
                 Kombinasi arsitektur futuristik dengan taman tropis: memberikan

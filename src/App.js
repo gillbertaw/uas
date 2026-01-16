@@ -30,7 +30,10 @@ import Sentosa from "./pages/singapore/Sentosa";
 import ChinaTown from "./pages/singapore/ChinaTown";
 
 import Thailand from "./pages/thailand/Thailand";
+import ChiangMai from "./pages/thailand/ChiangMai";
+import Krabi from "./pages/thailand/Krabi";
 import Bangkok from "./pages/thailand/Bangkok";
+
 
 import Vietnam from "./pages/vietnam/Vietnam";
 import Hanoi from "./pages/vietnam/Hanoi";
@@ -65,6 +68,8 @@ class App extends React.Component {
             <Route path="/singapore/chinatown" element={<ChinaTown />} />
 
             <Route path="/thailand" element={<Thailand />} />
+            <Route path="/thailand/chiang-mai" element={<ChiangMai />} />
+            <Route path="/thailand/krabi" element={<Krabi />} />
             <Route path="/thailand/bangkok" element={<Bangkok />} />
 
             <Route path="/vietnam" element={<Vietnam />} />

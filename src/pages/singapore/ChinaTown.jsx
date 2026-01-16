@@ -40,7 +40,7 @@ function ChinaTown() {
                 className="img-fluid"
                 alt="Chinatown"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Chinatown.
                 <br />
                 Kuil Buddha Tooth Relic, souvenir murah, makanan khas.
@@ -54,7 +54,7 @@ function ChinaTown() {
                 className="img-fluid"
                 alt="Kampong Glam"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Kampong Glam. <br />
                 Kawasan budaya Melayu yang kaya dengan sejarah dan seni.
               </p>
@@ -67,7 +67,7 @@ function ChinaTown() {
                 className="img-fluid"
                 alt="Little India"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Little India.
                 <br />
                 Melihat budaya, kuliner, dan belanja, dengan fokus pada

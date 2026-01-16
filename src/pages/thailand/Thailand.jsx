@@ -28,9 +28,9 @@ function Thailand() {
     <>
       <section className="kyml">
         <img
-          src="/images/country/malaysia/malaysia.png"
+          src="/images/country/thailand/thailand.jpeg"
           className="bg-img"
-          alt="Malaysia"
+          alt="Thailand"
         />
 
         <div className="container" id="kymalay">
@@ -48,7 +48,7 @@ function Thailand() {
 
             <div className="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
               <h2 className="fw-bold mb-0" id="judulmalay">
-                Rencana Trip ke Malaysia
+                Rencana Trip ke Thailand
               </h2>
             </div>
 
@@ -68,47 +68,47 @@ function Thailand() {
           <div className="row g-4">
             <div className="col-md-4">
               <Link
-                to="/malaysia/kuala-lumpur"
+                to="/thailand/chiang-mai"
                 className="text-decoration-none"
               >
                 <div className="card h-100 shadow-sm">
                   <img
-                    src="/images/country/malaysia/kuala_lumpur.jpeg"
+                    src="/images/country/thailand/Chiang_Mai.jpeg"
                     className="card-img-top"
-                    alt="Kuala Lumpur"
+                    alt="Chiang Mai"
                   />
                   <div className="card-body">
-                    <h5>Day 1–2 Kuala Lumpur</h5>
+                    <h5>Day 1–2 Chiang Mai</h5>
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="col-md-4">
-              <Link to="/malaysia/penang" className="text-decoration-none">
+              <Link to="/thailand/krabi" className="text-decoration-none">
                 <div className="card h-100 shadow-sm">
                   <img
-                    src="/images/country/malaysia/penang.jpeg"
+                    src="/images/country/thailand/krabi.jpeg"
                     className="card-img-top"
-                    alt="Penang"
+                    alt="Krabi"
                   />
                   <div className="card-body">
-                    <h5>Day 3–4 Penang</h5>
+                    <h5>Day 3–4 Phuket/Krabi</h5>
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="col-md-4">
-              <Link to="/malaysia/langkawi" className="text-decoration-none">
+              <Link to="/thailand/bangkok" className="text-decoration-none">
                 <div className="card h-100 shadow-sm">
                   <img
-                    src="/images/country/malaysia/langkawi.jpeg"
+                    src="/images/country/thailand/bangkok.jpeg"
                     className="card-img-top"
-                    alt="Langkawi"
+                    alt="Bangkok"
                   />
                   <div className="card-body">
-                    <h5>Day 5–6 Langkawi</h5>
+                    <h5>Day 5–6 Bangkok</h5>
                   </div>
                 </div>
               </Link>

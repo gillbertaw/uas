@@ -40,7 +40,7 @@ function Sentosa() {
                 className="img-fluid"
                 alt="Universal Studios Singapore (USS)"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Universal Studios Singapore (USS).
                 <br />
                 Menjelajahi taman bermain yang terkenal di Singapura
@@ -54,7 +54,7 @@ function Sentosa() {
                 className="img-fluid"
                 alt="SEA Aquarium"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 SEA Aquarium. <br />
                 Menyelami keindahan bawah laut dengan berbagai spesies ikan dan
                 kehidupan laut lainnya.
@@ -68,7 +68,7 @@ function Sentosa() {
                 className="img-fluid"
                 alt="Sentosa Cable Car"
               />
-              <p id="ml1" id="judulmalay">
+              <p id="judulmalay">
                 Sentosa Cable Car.
                 <br />
                 Melihat pemandangan laut dari atas.
