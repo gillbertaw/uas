@@ -38,10 +38,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar fixed-top navbar-expand-lg transparent-background t"
-        id="nav"
-      >
+      <nav className="navbar fixed-top navbar-expand-lg transparent-background t" id="nav">
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="Logo" width="50" height="auto" />

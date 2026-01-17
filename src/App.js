@@ -42,6 +42,7 @@ import HoiAn from "./pages/vietnam/HoiAn";
 import Australia from "./pages/australia/Australia";
 import Swizz from "pages/switzerland/Swizz";
 
+import WhatsAppBubble from "./components/WhatsAppBubble";
 class App extends React.Component {
   render() {
     return (
@@ -89,6 +90,7 @@ class App extends React.Component {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/list-ticket" element={<ListTicket />} />
           </Routes>
+          <WhatsAppBubble />
         </main>
         <Footer />
       </div>

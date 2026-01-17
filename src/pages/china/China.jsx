@@ -32,7 +32,7 @@ class China extends React.Component {
               className="img-fluid"
             />
             <div className="container" id="china-title">
-              <Link to="/list-tiket">
+              <Link to="/list-ticket">
                 <button className="btn" id="button-back">
                   🔙 Back
                 </button>
