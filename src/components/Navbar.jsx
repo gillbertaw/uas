@@ -5,28 +5,31 @@ import User from '../assets/images/General/user.png';
 import '../styles/navbar.css'
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       query: "",
+      isDark: false,
     };
+
+    this.handleSearch = this.handleSearch.bind(this);
   }
 
-  handleSearch = (e) => {
+  handleSearch(e) {
     e.preventDefault();
     const q = this.state.query.toLowerCase();
 
     const routes = {
-      china : "/china",
-      korea : "/korea",
-      australia : "/australia",
-      swizz : "/swizz",
-      malaysia : "/malaysia",
-      vietnam : "/vietnam",
-      singapore : "/singapore",
-      thailand : "/thailand",
-      japan : "/japan"
-    }
+      china: "/china",
+      korea: "/korea",
+      australia: "/australia",
+      swizz: "/swizz",
+      malaysia: "/malaysia",
+      vietnam: "/vietnam",
+      singapore: "/singapore",
+      thailand: "/thailand",
+      japan: "/japan",
+    };
 
     for (let key in routes) {
       if (q.includes(key)) {
@@ -34,11 +37,36 @@ class Navbar extends React.Component {
         break;
       }
     }
-  };
+  }
+
+  componentDidMount() {
+    const hero = document.querySelector(".video-container");
+
+    if (!hero) return;
+
+    this.observer = new IntersectionObserver(
+      ([entry]) => {
+        this.setState({ isDark: entry.isIntersecting });
+      },
+      { threshold: 0.3 }
+    );
+
+    this.observer.observe(hero);
+  }
+
+  componentWillUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
 
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-lg transparent-background t" id="nav">
+      <nav
+        className={`navbar fixed-top navbar-expand-lg transparent-background ${this.state.isDark ? "navbar-dark" : "navbar-light"
+          }`}
+        id="nav"
+      >
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="Logo" width="50" height="auto" />
@@ -73,11 +101,7 @@ class Navbar extends React.Component {
                   value={this.state.query}
                   onChange={(e) => this.setState({ query: e.target.value })}
                 />
-                <button
-                  className="btn btn-outline-success"
-                  type="submit"
-                  id="button-submit"
-                >
+                <button className="btn btn-outline-success" type="submit" id="button-submit">
                   🔍
                 </button>
               </form>
@@ -113,12 +137,7 @@ class Navbar extends React.Component {
                     aria-expanded="false"
                     id="user-btn"
                   >
-                    <img
-                      className="user"
-                      src={User}
-                      alt=""
-                      id="user-dropdown"
-                    ></img>
+                    <img className="user" src={User} alt="" id="user-dropdown"></img>
                   </button>
                   <ul className="dropdown-menu">
                     <li>
@@ -145,6 +164,6 @@ class Navbar extends React.Component {
       </nav>
     );
   }
-} 
+}
 
 export default Navbar;

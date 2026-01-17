@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/home.css";
+import "../../styles/australia.css";
 import background from "../../assets/images/australia/background-aus.jpg";
 import sydney from "../../assets/images/australia/syney.webp";
 import barrier from "../../assets/images/australia/barrier-reef.jpg";
@@ -98,7 +98,7 @@ class Australia extends React.Component {
                     aria-orientation="vertical"
                   >
                     <button
-                      className="nav-link active"
+                      className="nav-day active"
                       id="v-pills-home-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#v-pills-home"
@@ -110,7 +110,7 @@ class Australia extends React.Component {
                       1-Day
                     </button>
                     <button
-                      className="nav-link"
+                      className="nav-day"
                       id="v-pills-profile-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#v-pills-profile"

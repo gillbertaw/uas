@@ -2,13 +2,30 @@
     font-family: "Playfair Display";
     src: url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
 }
-
+/* BASE */
 #nav {
-    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
-    background-color: rgba(255, 255, 255, 0.1) !important; 
-    backdrop-filter: blur(10px); 
-    transition: background-color 0.3s ease;
-    position: fixed;
+  font-family: "Playfair Display", serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* HERO AREA (VIDEO / GELAP) */
+.navbar-dark {
+  background: transparent;
+}
+
+.navbar-dark .nav-link,
+.navbar-dark .navbar-brand {
+  color: white !important;
+}
+
+/* SETELAH HERO (TERANG) */
+.navbar-light {
+  background: white;
+}
+
+.navbar-light .nav-link,
+.navbar-light .navbar-brand {
+  color: black !important;
 }
 
 #navbar-center {
@@ -122,10 +139,3 @@
     transition: color 0.3s ease;
 }
 
-@media (width > 980px) {
-    .nav-link {
-        position : sticky;
-        top: .5rem;
-        mix-blend-mode: difference !important;
-    }
-}
