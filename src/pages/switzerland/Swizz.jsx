@@ -1,17 +1,42 @@
 import React from "react";
-import "../../styles/home.css";
+import "../../styles/swizz.css";
 import background from "../../assets/images/swizz/background-switz.webp";
 import lurene from "../../assets/images/swizz/lurene.jpg";
 import pilatus from "../../assets/images/swizz/pilatus2.jpg";
 import interlaken from "../../assets/images/swizz/interlaken.jpg";
 import jungfrau from "../../assets/images/swizz/jungfrau.webp";
+import swizzVideo from "../../assets/video/swizz/welcometoswizz.mp4";
 
 class Swizz extends React.Component {
+    constructor() {
+    super();
+    this.state = {
+      isVideoPlaying: true,
+    };
+  }
+
+  toggleVideo = () => {
+    this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
+  };
+  
   render() {
     return (
       <div className="deidrich-badan">
         <div className="background-aus">
-          <img className="aus" src={background} alt="" />
+          {!this.state.isVideoPlaying ? (
+            <img className="aus" src={background} alt="" />
+          ) : (
+            <video
+              className="video-container-aus"
+              src={swizzVideo}
+              autoPlay
+              muted
+              controls
+              onClick={this.toggleVideo}
+              onEnded={this.toggleVideo}
+              style={{ cursor: "pointer" }}
+            />
+          )}
           <div className="container d-flex justify-content-between flex-wrap">
             <div className="au-welcome">
               <h2 className="au-welcome-text">

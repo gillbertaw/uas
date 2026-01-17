@@ -10,11 +10,17 @@ class China extends React.Component {
     super();
     this.state = {
       category: "All",
+      isVideoPlaying: false,
     };
   }
   handleCategory = (e) => {
     this.setState({ category: e.target.value });
   };
+
+  toggleVideo = () => {
+    this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
+  };
+
   render() {
     const filteredGallery =
       this.state.category === "All"
@@ -110,9 +116,8 @@ class China extends React.Component {
                   <div className="col-md-6 col-lg-4 d-flex" key={index}>
                     <div className="card h-100 flex-fill">
                       <div className="card-body">
-                        <h5 className="card-title text-center">{`Day${
-                          index + 1
-                        }`}</h5>
+                        <h5 className="card-title text-center">{`Day${index + 1
+                          }`}</h5>
                         <h6 className="card-subtitle text-center">
                           {item.trip}
                         </h6>
@@ -142,11 +147,10 @@ class China extends React.Component {
                     key={item}
                     value={item}
                     onClick={this.handleCategory}
-                    className={`m-3 rounded-15 p-2 ${
-                      this.state.category === item
+                    className={`m-3 rounded-15 p-2 ${this.state.category === item
                         ? "bg-dark text-white"
                         : "bg-light"
-                    }`}
+                      }`}
                   >
                     {item}
                   </button>

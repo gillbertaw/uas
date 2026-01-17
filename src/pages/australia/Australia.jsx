@@ -5,13 +5,45 @@ import sydney from "../../assets/images/australia/syney.webp";
 import barrier from "../../assets/images/australia/barrier-reef.jpg";
 import uluru from "../../assets/images/australia/uluru.jpg";
 import melbourne from "../../assets/images/australia/melbourne.jpg";
+import ausVideo from "../../assets/video/australia/welcometoaus.mp4";
 
 class Australia extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isVideoPlaying: true,
+    };
+  }
+
+  toggleVideo = () => {
+    this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
+  };
+
   render() {
     return (
       <div className="deidrich-badan">
         <div className="background-aus">
-          <img className="aus" src={background} alt="" />
+          {!this.state.isVideoPlaying ? (
+            <img
+              className="aus"
+              src={background}
+              alt="Australia Background"
+              style={{ cursor: "pointer" }}
+              onClick={this.toggleVideo}
+              title="Click to play video"
+            />
+          ) : (
+            <video
+              className="video-container-aus"
+              src={ausVideo}
+              autoPlay
+              muted
+              controls
+              onClick={this.toggleVideo}
+              onEnded={this.toggleVideo}
+              style={{ cursor: "pointer" }}
+            />
+          )}
           <div className="container d-flex justify-content-between flex-wrap">
             <div className="au-welcome">
               <h2 className="au-welcome-text">
