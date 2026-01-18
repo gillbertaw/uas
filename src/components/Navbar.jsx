@@ -67,7 +67,7 @@ class Navbar extends React.Component {
           }`}
         id="nav"
       >
-        <div className="container">
+        <div className="container mb-0 pb-0">
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="Logo" width="50" height="auto" />
           </Link>
