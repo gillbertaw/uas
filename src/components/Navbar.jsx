@@ -29,6 +29,9 @@ class Navbar extends React.Component {
       singapore: "/singapore",
       thailand: "/thailand",
       japan: "/japan",
+      tokyo: "/japan/tokyo",
+      kyoto: "/japan/kyoto",
+      osaka: "/japan/osaka",
     };
 
     for (let key in routes) {
