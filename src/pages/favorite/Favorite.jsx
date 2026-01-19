@@ -51,19 +51,18 @@ function Favorite() {
                   alt={city.title}
                 />
 
-                <div className="card-body">
+                <div className="card-body d-flex flex-column gap-2">
                   <h5>{city.title}</h5>
                   <Link
                       to={city.link}
-                      className="btn btn-outline-primary me-2"
-                      id="lihat"
+                      className="btn btn-success w-100"
                     >
                       Lihat
                   </Link>
 
                   <button
-                    className="btn btn-outline-danger"
-                    id="lihat"
+                    className="btn btn-danger w-100"
+                    
                     onClick={() => removeFavorite(city.id)}
                   >
                     <FaHeartBroken /> Hapus

@@ -3,10 +3,33 @@ import { Link } from "react-router-dom";
 import "../../styles/listTicket.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
+function useWindowSize() {
+  const [size, setSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return size;
+}
+
+
 export default function ListTicket() {
   const bg = process.env.PUBLIC_URL + "/images/ticket/list_ticket.jpg";
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+  const {width, height} = useWindowSize();
+
   const cards = [
     {
       title: "Japan",
@@ -77,7 +100,16 @@ export default function ListTicket() {
 
   // Get visible slides based on screen size
   const getVisibleSlides = () => {
-    const slidesToShow = 3;
+    let slidesToShow = 3;
+
+    if (width < 600) {
+      slidesToShow = 1;
+    } else if (width < 900) {
+      slidesToShow = 2;
+    } else {
+      slidesToShow = 3;
+    }
+
     const visibleCards = [];
     for (let i = 0; i < slidesToShow; i++) {
       const index = (currentIndex + i) % cards.length;
