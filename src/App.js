@@ -41,6 +41,7 @@ import HoiAn from "./pages/vietnam/HoiAn";
 
 import Australia from "./pages/australia/Australia";
 import Swizz from "pages/switzerland/Swizz";
+import User from "./pages/user/UserMember";
 
 import WhatsAppBubble from "./components/WhatsAppBubble";
 class App extends React.Component {
@@ -61,6 +62,7 @@ class App extends React.Component {
 
             <Route path="/australia" element={<Australia />} />
             <Route path="/switzerland" element={<Swizz />} />
+            <Route path="/user" element={<User />} />
 
             <Route path="/malaysia" element={<Malaysia />} />
             <Route path="/malaysia/kuala-lumpur" element={<KualaLumpur />} />

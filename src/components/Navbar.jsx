@@ -151,7 +151,7 @@ class Navbar extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/user-member">
+                      <Link className="dropdown-item" to="/user">
                         User Demo
                       </Link>
                     </li>

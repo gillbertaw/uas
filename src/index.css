@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6, p, a, b, span, li, th, td, tr, button, .nav-day, input ::placeholder {
+h1,h2,h3,h4,h5,h6, p, a, b, span, li, th, td, tr, button, .nav-day, .form-text, label, input ::placeholder {
   font-family: 'Montserrat', sans-serif !important;
 }
 
