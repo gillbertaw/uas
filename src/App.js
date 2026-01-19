@@ -42,6 +42,11 @@ import HoiAn from "./pages/vietnam/HoiAn";
 import Australia from "./pages/australia/Australia";
 import Swizz from "pages/switzerland/Swizz";
 
+import Japan from "./pages/japan/HomeJapan";
+import Tokyo from "./pages/japan/Tokyo";
+import Osaka from "./pages/japan/Osaka";
+import Kyoto from "./pages/japan/Kyoto";
+
 import WhatsAppBubble from "./components/WhatsAppBubble";
 class App extends React.Component {
   render() {
@@ -81,6 +86,11 @@ class App extends React.Component {
             <Route path="/vietnam/hanoi" element={<Hanoi />} />
             <Route path="/vietnam/ha-long-bay" element={<HaLongBay />} />
             <Route path="/vietnam/hoi-an" element={<HoiAn />} />
+
+            <Route path='/japan' element={<Japan />} />
+            <Route path='/japan/tokyo' element={<Tokyo />} />
+            <Route path='/japan/osaka' element={<Osaka />} />
+            <Route path='/japan/kyoto' element={<Kyoto />} />
 
             {/* fallback to home */}
             <Route path="*" element={<ComingSoon />} />
