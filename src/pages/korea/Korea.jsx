@@ -15,6 +15,26 @@ class Korea extends React.Component {
   handleCategory = (e) => {
     this.setState({ category: e.target.value });
   };
+  addToFavorite = () => {
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const korea = {
+      id: "korea",
+      title: "Korea",
+      image: "/images/country/korea/korea background.png",
+      link: "/korea",
+    };
+
+    const exists = favorites.find((item) => item.id === korea.id);
+    if (exists) {
+      alert("Korea sudah ada di Favorite ❤️");
+      return;
+    }
+
+    favorites.push(korea);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    alert("Korea ditambahkan ke Favorite ❤️");
+  };
   render() {
     const filteredGallery =
       this.state.category === "All"
@@ -36,6 +56,13 @@ class Korea extends React.Component {
                   🔙 Back
                 </button>
               </Link>
+              <button
+                onClick={this.addToFavorite}
+                className="btn btn-danger w-100 float-end"
+                id="fav"
+              >
+                ❤️ Favorite
+              </button>
               <h1 className="text-center fw-bold">Explore Korea</h1>
               <p className="text-center">
                 Discover the Land of the Morning Calm

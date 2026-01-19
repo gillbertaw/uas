@@ -18,7 +18,7 @@ class Swizz extends React.Component {
   toggleVideo = () => {
     this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
   };
-  
+
   render() {
     return (
       <div className="deidrich-badan">
@@ -31,7 +31,6 @@ class Swizz extends React.Component {
               src={swizzVideo}
               autoPlay
               muted
-              controls
               onClick={this.toggleVideo}
               onEnded={this.toggleVideo}
               style={{ cursor: "pointer" }}

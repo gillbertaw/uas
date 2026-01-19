@@ -20,6 +20,26 @@ class China extends React.Component {
   toggleVideo = () => {
     this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
   };
+  addToFavorite = () => {
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const china = {
+      id: "china",
+      title: "China",
+      image: "/images/country/china/china background.jpg",
+      link: "/china",
+    };
+
+    const exists = favorites.find((item) => item.id === china.id);
+    if (exists) {
+      alert("China sudah ada di Favorite ❤️");
+      return;
+    }
+
+    favorites.push(china);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    alert("China ditambahkan ke Favorite ❤️");
+  };
 
   render() {
     const filteredGallery =
@@ -43,6 +63,13 @@ class China extends React.Component {
                   🔙 Back
                 </button>
               </Link>
+              <button
+                onClick={this.addToFavorite}
+                className="btn btn-danger w-100 float-end"
+                id="fav"
+              >
+                ❤️ Favorite
+              </button>
               <h1 className="text-center fw-bold">Explore China</h1>
               <p className="text-center">Discover the Land of the Dragon</p>
             </div>
@@ -116,8 +143,9 @@ class China extends React.Component {
                   <div className="col-md-6 col-lg-4 d-flex" key={index}>
                     <div className="card h-100 flex-fill">
                       <div className="card-body">
-                        <h5 className="card-title text-center">{`Day${index + 1
-                          }`}</h5>
+                        <h5 className="card-title text-center">{`Day${
+                          index + 1
+                        }`}</h5>
                         <h6 className="card-subtitle text-center">
                           {item.trip}
                         </h6>
@@ -147,10 +175,11 @@ class China extends React.Component {
                     key={item}
                     value={item}
                     onClick={this.handleCategory}
-                    className={`m-3 rounded-15 p-2 ${this.state.category === item
+                    className={`m-3 rounded-15 p-2 ${
+                      this.state.category === item
                         ? "bg-dark text-white"
                         : "bg-light"
-                      }`}
+                    }`}
                   >
                     {item}
                   </button>

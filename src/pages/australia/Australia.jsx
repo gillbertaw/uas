@@ -38,7 +38,6 @@ class Australia extends React.Component {
               src={ausVideo}
               autoPlay
               muted
-              controls
               onClick={this.toggleVideo}
               onEnded={this.toggleVideo}
               style={{ cursor: "pointer" }}
