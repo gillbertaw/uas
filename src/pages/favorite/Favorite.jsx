@@ -53,16 +53,17 @@ function Favorite() {
 
                 <div className="card-body">
                   <h5>{city.title}</h5>
-
                   <Link
-                    to={city.link}
-                    className="btn btn-outline-primary btn-sm me-2"
-                  >
-                    Lihat
+                      to={city.link}
+                      className="btn btn-outline-primary me-2"
+                      id="lihat"
+                    >
+                      Lihat
                   </Link>
 
                   <button
-                    className="btn btn-outline-danger btn-sm"
+                    className="btn btn-outline-danger"
+                    id="lihat"
                     onClick={() => removeFavorite(city.id)}
                   >
                     <FaHeartBroken /> Hapus
