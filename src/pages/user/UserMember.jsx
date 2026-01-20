@@ -94,7 +94,6 @@ class UserMember extends React.Component {
             </nav>
 
             <div className="tab-content">
-              {/* USER INFO */}
               <div className="tab-pane fade show active" id="nav-home">
                 <form>
                   <div className="mb-3">
@@ -151,8 +150,6 @@ class UserMember extends React.Component {
                 </form>
               </div>
 
-
-              {/* MEMBER */}
               <div className="tab-pane fade" id="nav-contact">
                 <div className="member">
                   <p>Welcome, {user.username}! You are logged in.</p>

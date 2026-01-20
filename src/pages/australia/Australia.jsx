@@ -6,6 +6,7 @@ import barrier from "../../assets/images/australia/barrier-reef.jpg";
 import uluru from "../../assets/images/australia/uluru.jpg";
 import melbourne from "../../assets/images/australia/melbourne.jpg";
 import ausVideo from "../../assets/video/australia/welcometoaus.mp4";
+import { Link } from "react-router-dom";
 
 class Australia extends React.Component {
   constructor() {
@@ -43,6 +44,21 @@ class Australia extends React.Component {
               style={{ cursor: "pointer" }}
             />
           )}
+          <div className="container">
+            <Link to="/list-ticket">
+              <button className="btn" id="button-back">
+                🔙 Back
+              </button>
+            </Link>
+            <button
+              onClick={this.addToFavorite}
+              className="btn btn-danger w-100 float-end"
+              id="fav"
+            >
+              ❤️ Favorite
+            </button>
+          </div>
+
           <div className="container d-flex justify-content-between flex-wrap">
             <div className="au-welcome">
               <h2 className="au-welcome-text">

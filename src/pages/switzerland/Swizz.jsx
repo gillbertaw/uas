@@ -6,9 +6,10 @@ import pilatus from "../../assets/images/swizz/pilatus2.jpg";
 import interlaken from "../../assets/images/swizz/interlaken.jpg";
 import jungfrau from "../../assets/images/swizz/jungfrau.webp";
 import swizzVideo from "../../assets/video/swizz/welcometoswizz.mp4";
+import { Link } from "react-router-dom";
 
 class Swizz extends React.Component {
-    constructor() {
+  constructor() {
     super();
     this.state = {
       isVideoPlaying: true,
@@ -36,6 +37,22 @@ class Swizz extends React.Component {
               style={{ cursor: "pointer" }}
             />
           )}
+
+          <div className="container">
+            <Link to="/list-ticket">
+              <button className="btn" id="button-back">
+                🔙 Back
+              </button>
+            </Link>
+            <button
+              onClick={this.addToFavorite}
+              className="btn btn-danger w-100 float-end"
+              id="fav"
+            >
+              ❤️ Favorite
+            </button>
+          </div>
+
           <div className="container d-flex justify-content-between flex-wrap">
             <div className="au-welcome">
               <h2 className="au-welcome-text">
