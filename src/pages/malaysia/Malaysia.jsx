@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import '../../styles/malay.css';
+import "../../styles/malay.css";
 
 function Malaysia() {
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ function Malaysia() {
             <div className="col-12 col-md-2 text-start d-flex align-items-center">
               <button
                 onClick={() => navigate(-1)}
-                className="btn btn-secondary w-100"
+                className="btn btn-secondary"
                 aria-label="Kembali"
                 id="back"
               >
