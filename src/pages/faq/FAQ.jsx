@@ -23,6 +23,26 @@ const faqData = [
     answer:
       "Simply use the search bar at the top of the page! Type the name of the country you want to explore, and our website will instantly show detailed travel information, including recommended destinations, attractions, and road maps.",
   },
+  {
+    question: "How do I add a country to my favorites?",
+    answer:
+      "Open a country page and click the heart or favorite icon. The country will be saved to your Favorites list so you can easily access it later.",
+  },
+  {
+  question: "Where can I see my favorite countries?",
+  answer:
+    "Open the navigation bar and select the Favorite menu. The system will retrieve and display all countries stored in your favorites from the database.",
+  },
+  {
+    question: "Can I remove a country from my favorites?",
+    answer:
+      "Yes. Navigate to the Favorite page, then press the Delete button on the selected country to remove it from your favorites list.",
+  },
+  {
+    question: "How can I quickly access a country from favorites?",
+    answer:
+      "After opening the Favorite menu, you will be redirected to a new page. Press the View button on a country card to open its detailed country page.",
+  }
 ];
 
 class FAQ extends React.Component {
