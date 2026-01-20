@@ -35,9 +35,12 @@ class Navbar extends React.Component {
       osaka: "/japan/osaka",
     };
 
+    let found = false;
+
     for (let key in routes) {
       if (q.includes(key)) {
         window.location.pathname = routes[key];
+        found  = true;
         break;
       }
     }

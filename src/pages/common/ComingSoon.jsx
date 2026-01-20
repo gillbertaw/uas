@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../styles/comingSoon.css";
 import { TbFaceIdError } from "react-icons/tb";
 
