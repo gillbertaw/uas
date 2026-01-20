@@ -12,7 +12,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Validate input
+
     if (!username.trim()) {
       alert("Username harus diisi");
       return;
@@ -23,7 +23,6 @@ export default function Login() {
       return;
     }
 
-    // Validate login credentials
     const result = validateLogin(username, password);
     
     if (result.success) {

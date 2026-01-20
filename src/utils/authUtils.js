@@ -122,7 +122,6 @@ export const updateProfile = (userId, newUsername, newEmail) => {
     return { success: false, message: "Data tidak boleh kosong" };
   }
 
-  // Cek username dipakai user lain
   const usernameUsed = users.find(
     (u) => u.username === newUsername && u.id !== userId
   );
