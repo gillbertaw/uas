@@ -44,6 +44,10 @@ class Navbar extends React.Component {
         break;
       }
     }
+
+    if(!found) {
+      window.location.pathname = "/not-found";
+    }
   }
   
   componentDidMount() {
