@@ -1,9 +1,21 @@
-@font-face {
-    font-family: "Playfair Display";
-    src: url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+.comingSoon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
 }
 
-.comingSoon {
-    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
-    margin-top: 80px;
+.comingSoon-content {
+  max-width: 420px;
+  padding: 20px;
 }
+
+.comingSoon svg {
+  margin-bottom: 16px;
+  color: #999;
+}
+

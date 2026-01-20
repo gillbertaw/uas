@@ -8,13 +8,11 @@
     margin: 0px 110px 0px!important;
 } */
 
-/* BASE */
 #nav {
   font-family: "Playfair Display", serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* HERO AREA (VIDEO / GELAP) */
 .navbar-dark {
   background: transparent;
 }
@@ -24,7 +22,6 @@
   color: white !important;
 }
 
-/* SETELAH HERO (TERANG) */
 .navbar-light {
   background: white;
 }

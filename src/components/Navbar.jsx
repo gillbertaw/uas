@@ -42,28 +42,7 @@ class Navbar extends React.Component {
       }
     }
   }
-
-  // componentDidMount() {
-  //   const hero = document.querySelector(".video-container");
-
-  //   if (!hero) return;
-
-  //   this.observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       this.setState({ isDark: entry.isIntersecting });
-  //     },
-  //     { threshold: 0.3 }
-  //   );
-
-  //   this.observer.observe(hero);
-  // }
-
-  // componentWillUnmount() {
-  //   if (this.observer) {
-  //     this.observer.disconnect();
-  //   }
-  // }
-
+  
   componentDidMount() {
     const hero = document.querySelector(".video-container");
 
@@ -77,13 +56,10 @@ class Navbar extends React.Component {
       this.observer.observe(hero);
     }
 
-    // 🔹 ambil user login
     const user = getCurrentUser();
     if (user) {
       this.setState({ currentUser: user });
     }
-
-    // 🔄 auto update kalau login/logout di tab lain
     window.addEventListener("storage", this.syncUser);
   }
 
@@ -102,7 +78,6 @@ class Navbar extends React.Component {
     this.setState({ currentUser: null });
     window.location.href = "/login";
   };
-
 
   render() {
     return (
