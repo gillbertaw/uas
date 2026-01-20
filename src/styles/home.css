@@ -291,12 +291,12 @@
   color: black !important;
   opacity: 0.6;  
 }
-
+/* 
 .nav-link.active {
   opacity: 1 !important;
-}
+} */
 
-button.submit-btn {
+/* button.submit-btn {
   background-color: #1A2F42;
   border-color: #1A2F42;
 }
@@ -304,8 +304,18 @@ button.submit-btn {
 button.submit-btn:hover {
   background-color: #333333;
   border-color: #333333;
-}
+} */
 
 #main-section-faq {
     margin-top: 50px;
+}
+
+.nav-tabs,
+.nav-tabs .nav-link {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-flex !important;
+  pointer-events: auto !important;
+  transform: none !important;
+  z-index: 9999;
 }

@@ -114,3 +114,41 @@ export const logout = () => {
 export const exportUsers = () => {
   return getAllUsers();
 };
+
+export const updateProfile = (userId, newUsername, newEmail) => {
+  const users = getAllUsers();
+
+  if (!newUsername || !newEmail) {
+    return { success: false, message: "Data tidak boleh kosong" };
+  }
+
+  // Cek username dipakai user lain
+  const usernameUsed = users.find(
+    (u) => u.username === newUsername && u.id !== userId
+  );
+
+  if (usernameUsed) {
+    return { success: false, message: "Username sudah digunakan" };
+  }
+
+  // Cek email dipakai user lain
+  const emailUsed = users.find(
+    (u) => u.email === newEmail && u.id !== userId
+  );
+
+  if (emailUsed) {
+    return { success: false, message: "Email sudah digunakan" };
+  }
+
+  const index = users.findIndex((u) => u.id === userId);
+
+  users[index].username = newUsername;
+  users[index].email = newEmail;
+  users[index].updatedAt = new Date().toISOString();
+
+  localStorage.setItem("users_database", JSON.stringify(users));
+  localStorage.setItem("currentUser", JSON.stringify(users[index]));
+
+  return { success: true, user: users[index] };
+};
+

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import logo from '../assets/images/General/LogoTravel.png';
 import User from '../assets/images/General/user.png';
 import '../styles/navbar.css'
+import { getCurrentUser, logout } from "../utils/authUtils";
+
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -11,7 +13,6 @@ class Navbar extends React.Component {
       query: "",
       isDark: false,
     };
-
     this.handleSearch = this.handleSearch.bind(this);
   }
 
@@ -49,27 +50,69 @@ class Navbar extends React.Component {
     }
   }
 
+<<<<<<< HEAD
+=======
+  // componentDidMount() {
+  //   const hero = document.querySelector(".video-container");
+
+  //   if (!hero) return;
+
+  //   this.observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       this.setState({ isDark: entry.isIntersecting });
+  //     },
+  //     { threshold: 0.3 }
+  //   );
+
+  //   this.observer.observe(hero);
+  // }
+
+  // componentWillUnmount() {
+  //   if (this.observer) {
+  //     this.observer.disconnect();
+  //   }
+  // }
+>>>>>>> 5764a0ee5ce2c7cb072ec9d29342ca10343644b1
 
   componentDidMount() {
     const hero = document.querySelector(".video-container");
 
-    if (!hero) return;
+    if (hero) {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          this.setState({ isDark: entry.isIntersecting });
+        },
+        { threshold: 0.3 }
+      );
+      this.observer.observe(hero);
+    }
 
-    this.observer = new IntersectionObserver(
-      ([entry]) => {
-        this.setState({ isDark: entry.isIntersecting });
-      },
-      { threshold: 0.3 }
-    );
+    // 🔹 ambil user login
+    const user = getCurrentUser();
+    if (user) {
+      this.setState({ currentUser: user });
+    }
 
-    this.observer.observe(hero);
+    // 🔄 auto update kalau login/logout di tab lain
+    window.addEventListener("storage", this.syncUser);
   }
+
+  syncUser = () => {
+    const user = getCurrentUser();
+    this.setState({ currentUser: user });
+  };
 
   componentWillUnmount() {
-    if (this.observer) {
-      this.observer.disconnect();
-    }
+    if (this.observer) this.observer.disconnect();
+    window.removeEventListener("storage", this.syncUser);
   }
+
+  handleLogout = () => {
+    logout();
+    this.setState({ currentUser: null });
+    window.location.href = "/login";
+  };
+
 
   render() {
     return (
@@ -150,22 +193,40 @@ class Navbar extends React.Component {
                   >
                     <img className="user" src={User} alt="" id="user-dropdown"></img>
                   </button>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <Link className="dropdown-item" to="/login">
-                        Login
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/signup">
-                        Sign Up
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/user">
-                        User Demo
-                      </Link>
-                    </li>
+                  <ul className="dropdown-menu dropdown-menu-end">
+                    {!this.state.currentUser ? (
+                      <>
+                        <li>
+                          <Link className="dropdown-item" to="/login">
+                            Login
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to="/signup">
+                            Sign Up
+                          </Link>
+                        </li>
+                      </>
+                    ) : (
+                      <>
+                        <li className="dropdown-item text-muted">
+                          Hi, <strong>{this.state.currentUser.username}</strong>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to="/user">
+                            Profile
+                          </Link>
+                        </li>
+                        <li>
+                          <button
+                            className="dropdown-item text-danger"
+                            onClick={this.handleLogout}
+                          >
+                            Logout
+                          </button>
+                        </li>
+                      </>
+                    )}
                   </ul>
                 </div>
               </li>
