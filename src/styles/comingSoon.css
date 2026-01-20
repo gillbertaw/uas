@@ -6,4 +6,24 @@
 .comingSoon {
     font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
     margin-top: 80px;
+    padding-top: 100px;    
+}
+
+.img-comingSoon {
+    opacity: 0.7;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-comingSoon {
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
 }

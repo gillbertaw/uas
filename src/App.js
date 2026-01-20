@@ -11,6 +11,8 @@ import China from "./pages/china/China";
 import Korea from "./pages/korea/Korea";
 import FAQ from "./pages/faq/FAQ";
 import ComingSoon from "./pages/common/ComingSoon";
+import NotFound from "./pages/common/NotFound";
+
 
 import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
@@ -51,6 +53,14 @@ import Kyoto from "./pages/japan/Kyoto";
 import WhatsAppBubble from "./components/WhatsAppBubble";
 class App extends React.Component {
   render() {
+    const comingSoonRoutes = [
+    "/how-to-book",
+    "/news",
+    "/careers",
+    "/instagram",
+    "/facebook",
+    "/youtube",
+  ];
     return (
       <div className="app">
         <Navbar />
@@ -64,6 +74,11 @@ class App extends React.Component {
             <Route path="/faq" element={<FAQ />} />
 
             <Route path="/favorite" element={<Favorite />} />
+
+            <Route path="/login" element={<Login />} />
+            <Route path="/forgotpass" element={<ForgotPassword />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/list-ticket" element={<ListTicket />} />
 
             <Route path="/australia" element={<Australia />} />
             <Route path="/switzerland" element={<Swizz />} />
@@ -94,13 +109,12 @@ class App extends React.Component {
             <Route path='/japan/osaka' element={<Osaka />} />
             <Route path='/japan/kyoto' element={<Kyoto />} />
 
-            {/* fallback to home */}
-            <Route path="*" element={<ComingSoon />} />
+            <Route path="*" element={<NotFound />} />
 
-            <Route path="/login" element={<Login />} />
-            <Route path="/forgotpass" element={<ForgotPassword />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/list-ticket" element={<ListTicket />} />
+            {comingSoonRoutes.map((path) => (
+              <Route key={path} path={path} element={<ComingSoon />}/>
+            ))}
+            
           </Routes>
           <WhatsAppBubble />
         </main>
