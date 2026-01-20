@@ -1,21 +1,29 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url('../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+
 .comingSoon {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  font-size: 1.1rem;
-  color: #666;
+    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+    margin-top: 80px;
+    padding-top: 100px;    
 }
 
-.comingSoon-content {
-  max-width: 420px;
-  padding: 20px;
+.img-comingSoon {
+    opacity: 0.7;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
-.comingSoon svg {
-  margin-bottom: 16px;
-  color: #999;
+.btn-comingSoon {
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
 }
-
