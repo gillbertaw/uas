@@ -19,6 +19,26 @@ class Australia extends React.Component {
   toggleVideo = () => {
     this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
   };
+  addToFavorite = () => {
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const australia = {
+      id: "Australia",
+      title: "Australia",
+      image: background,
+      link: "/australia",
+    };
+
+    const exists = favorites.find((item) => item.id === australia.id);
+    if (exists) {
+      alert("Australia sudah ada di Favorite ❤️");
+      return;
+    }
+
+    favorites.push(australia);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    alert("Australia ditambahkan ke Favorite ❤️");
+  };
 
   render() {
     return (

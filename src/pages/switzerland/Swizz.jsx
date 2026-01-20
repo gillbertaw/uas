@@ -19,6 +19,26 @@ class Swizz extends React.Component {
   toggleVideo = () => {
     this.setState({ isVideoPlaying: !this.state.isVideoPlaying });
   };
+  addToFavorite = () => {
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const switzerland = {
+      id: "Switzerland",
+      title: "Switzerland",
+      image: background,
+      link: "/switzerland",
+    };
+
+    const exists = favorites.find((item) => item.id === switzerland.id);
+    if (exists) {
+      alert("Switzerland sudah ada di Favorite ❤️");
+      return;
+    }
+
+    favorites.push(switzerland);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    alert("Switzerland ditambahkan ke Favorite ❤️");
+  };
 
   render() {
     return (
