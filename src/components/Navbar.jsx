@@ -50,30 +50,6 @@ class Navbar extends React.Component {
     }
   }
 
-<<<<<<< HEAD
-=======
-  // componentDidMount() {
-  //   const hero = document.querySelector(".video-container");
-
-  //   if (!hero) return;
-
-  //   this.observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       this.setState({ isDark: entry.isIntersecting });
-  //     },
-  //     { threshold: 0.3 }
-  //   );
-
-  //   this.observer.observe(hero);
-  // }
-
-  // componentWillUnmount() {
-  //   if (this.observer) {
-  //     this.observer.disconnect();
-  //   }
-  // }
->>>>>>> 5764a0ee5ce2c7cb072ec9d29342ca10343644b1
-
   componentDidMount() {
     const hero = document.querySelector(".video-container");
 
