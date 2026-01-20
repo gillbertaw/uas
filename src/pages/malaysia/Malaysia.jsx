@@ -5,7 +5,6 @@ function Malaysia() {
   const navigate = useNavigate();
   const addToFavorite = () => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-
     const malaysia = {
       id: "malaysia",
       title: "Malaysia",
