@@ -318,4 +318,5 @@ button.submit-btn:hover {
   pointer-events: auto !important;
   transform: none !important;
   z-index: 9999;
+  color: black !important;
 }
